@@ -1,0 +1,48 @@
+digraph SubActivitySystem {
+  rankdir=TD;
+  
+
+
+  subgraph cluster_external {
+    label="External Components";
+    style=filled;
+    color=lightgray;
+    
+    peer_learning [label="Group\nLearning" style=filled fillcolor=lightyellow];
+    lab_monitoring [label="In-lab\nMonitoring" style=filled fillcolor=lightblue];
+    lab_feedback [label="In-lab\nFeedback" style=filled fillcolor=lightblue];
+    project_timeline [label="Project\nTime-line" style=filled fillcolor=lightyellow];
+    iterative_cycles [label="Iterative\nCycles" style=filled fillcolor=lightyellow];
+    knowledge [label="Knowledge" style=filled fillcolor=lightpink];
+    Doubt [label="Doubt" style=filled fillcolor=lightpink];
+    jit_concept [label="Just-in-Time\nConcept\nIntroduction" style=filled fillcolor=lightgreen];
+    Product [label="Final\nCompiler" style=filled fillcolor=orange];
+    Grade [label="Grade" style=filled fillcolor=black fontcolor=white];
+  }
+  
+    
+    individual_impl [label="Individual\nImplementation" style=filled fillcolor=lightyellow];
+    individual_explain [label="Individual\nExplanation" style=filled fillcolor=lightyellow];
+    peer_explain [label="Peer\nExplanation" style=filled fillcolor=lightyellow];
+    design_choices [label="Design\nChoices" style=filled fillcolor=lightyellow];
+    
+    // Internal sub-activity flow
+    individual_impl -> individual_explain [arrowhead=normal];
+    individual_impl -> iterative_cycles;
+    individual_explain -> design_choices;
+    design_choices -> iterative_cycles;
+    
+    // Connections to external components
+    project_timeline -> individual_impl;
+    lab_monitoring -> individual_explain;
+    lab_feedback -> design_choices;
+    peer_explain -> lab_monitoring;
+    lab_feedback -> knowledge;
+    individual_impl -> Doubt;
+    peer_explain -> Doubt;
+    peer_explain -> peer_learning;
+    Doubt -> jit_concept;
+    Product -> Grade;
+    peer_explain -> Grade;
+    individual_impl -> Grade;
+}

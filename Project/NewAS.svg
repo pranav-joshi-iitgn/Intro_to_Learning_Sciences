@@ -1,0 +1,527 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="895pt" height="1160pt" viewBox="0.00 0.00 895.00 1160.07">
+<g id="graph0" class="graph" transform="translate(255.80664124559055,727.3595427245584) scale(0.4887092423998845)" data-name="CourseDesign">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-1156.07 891,-1156.07 891,4 -4,4" style=""/>
+<!-- lab_monitoring -->
+<g id="node1" class="node" pointer-events="visible" data-name="lab_monitoring">
+
+<ellipse fill="lightblue" stroke="black" cx="524.92" cy="-1122.66" rx="56.33" ry="29.33" style=""/>
+<text text-anchor="middle" x="524.92" y="-1126.86" font-family="Times,serif" font-size="14.00" style="">In-lab</text>
+<text text-anchor="middle" x="524.92" y="-1110.06" font-family="Times,serif" font-size="14.00" style="">Monitoring</text>
+</g>
+<!-- lab_feedback -->
+<g id="node2" class="node" pointer-events="visible" data-name="lab_feedback">
+
+<ellipse fill="lightblue" stroke="black" cx="662.92" cy="-1122.66" rx="49.49" ry="29.33" style=""/>
+<text text-anchor="middle" x="662.92" y="-1126.86" font-family="Times,serif" font-size="14.00" style="">In-lab</text>
+<text text-anchor="middle" x="662.92" y="-1110.06" font-family="Times,serif" font-size="14.00" style="">Feedback</text>
+</g>
+<!-- lab_monitoring&#45;&gt;lab_feedback -->
+<g id="edge6" class="edge" data-name="lab_monitoring-&gt;lab_feedback">
+
+<path fill="none" stroke="black" d="M581.52,-1122.66C588.24,-1122.66 594.96,-1122.66 601.69,-1122.66" style=""/>
+<polygon fill="black" stroke="black" points="601.48,-1126.16 611.48,-1122.66 601.48,-1119.16 601.48,-1126.16" style=""/>
+</g>
+<!-- jit_concept -->
+<g id="node5" class="node" pointer-events="visible" data-name="jit_concept">
+
+<ellipse fill="lightgreen" stroke="black" cx="291.92" cy="-943.95" rx="61.81" ry="41.09" style=""/>
+<text text-anchor="middle" x="291.92" y="-956.55" font-family="Times,serif" font-size="14.00" style="">Just-in-Time</text>
+<text text-anchor="middle" x="291.92" y="-939.75" font-family="Times,serif" font-size="14.00" style="">Concept</text>
+<text text-anchor="middle" x="291.92" y="-922.95" font-family="Times,serif" font-size="14.00" style="">Introduction</text>
+</g>
+<!-- lab_monitoring&#45;&gt;jit_concept -->
+<g id="edge3" class="edge" data-name="lab_monitoring-&gt;jit_concept">
+
+<path fill="none" stroke="black" d="M491.76,-1098.82C474.38,-1086.68 452.82,-1071.39 433.92,-1057.24 402.04,-1033.38 366.94,-1005.64 339.61,-983.7" style=""/>
+<polygon fill="black" stroke="black" points="341.83,-980.98 331.84,-977.44 337.44,-986.44 341.83,-980.98" style=""/>
+</g>
+<!-- individual_explain -->
+<g id="node21" class="node" pointer-events="visible" data-name="individual_explain">
+
+<ellipse fill="lightyellow" stroke="black" cx="811.92" cy="-552.74" rx="59.3" ry="29.33" style=""/>
+<text text-anchor="middle" x="811.92" y="-556.94" font-family="Times,serif" font-size="14.00" style="">Individual</text>
+<text text-anchor="middle" x="811.92" y="-540.14" font-family="Times,serif" font-size="14.00" style="">Explanation</text>
+</g>
+<!-- lab_monitoring&#45;&gt;individual_explain -->
+<g id="edge49" class="edge" data-name="lab_monitoring-&gt;individual_explain">
+
+<path fill="none" stroke="black" d="M541.33,-1094.11C553.59,-1073.77 570.91,-1045.54 586.92,-1021.24 688,-867.78 768.89,-854.63 815.92,-676.99 823.12,-649.78 821.87,-618.01 818.95,-593.54" style=""/>
+<polygon fill="black" stroke="black" points="822.42,-593.1 817.61,-583.66 815.49,-594.04 822.42,-593.1" style=""/>
+</g>
+<!-- peer_explain -->
+<g id="node22" class="node" pointer-events="visible" data-name="peer_explain">
+
+<ellipse fill="lightyellow" stroke="black" cx="483.92" cy="-457.91" rx="59.3" ry="29.33" style=""/>
+<text text-anchor="middle" x="483.92" y="-462.11" font-family="Times,serif" font-size="14.00" style="">Peer</text>
+<text text-anchor="middle" x="483.92" y="-445.31" font-family="Times,serif" font-size="14.00" style="">Explanation</text>
+</g>
+<!-- lab_monitoring&#45;&gt;peer_explain -->
+<g id="edge51" class="edge" data-name="lab_monitoring-&gt;peer_explain">
+
+<path fill="none" stroke="black" d="M522.43,-1081.64C521.93,-1073.56 521.41,-1065.13 520.92,-1057.24 507.34,-838.06 491.01,-573.72 485.69,-487.56" style=""/>
+<polygon fill="black" stroke="black" points="518.94,-1081.84 523.05,-1091.61 525.92,-1081.41 518.94,-1081.84" style=""/>
+</g>
+<!-- knowledge -->
+<g id="node10" class="node" pointer-events="visible" data-name="knowledge">
+
+<ellipse fill="lightpink" stroke="black" cx="288.92" cy="-268.25" rx="55.61" ry="18" style=""/>
+<text text-anchor="middle" x="288.92" y="-264.05" font-family="Times,serif" font-size="14.00" style="">Knowledge</text>
+</g>
+<!-- lab_feedback&#45;&gt;knowledge -->
+<g id="edge52" class="edge" data-name="lab_feedback-&gt;knowledge">
+
+<path fill="none" stroke="black" d="M648.71,-1094.31C603.7,-1007.17 461.52,-727.58 363.92,-487.33 336.71,-420.34 310.56,-339.33 297.52,-297.42" style=""/>
+<polygon fill="black" stroke="black" points="300.87,-296.41 294.58,-287.89 294.19,-298.48 300.87,-296.41" style=""/>
+</g>
+<!-- iterative_cycles -->
+<g id="node11" class="node" pointer-events="visible" data-name="iterative_cycles">
+
+<ellipse fill="lightyellow" stroke="black" cx="570.92" cy="-552.74" rx="44.08" ry="29.33" style=""/>
+<text text-anchor="middle" x="570.92" y="-556.94" font-family="Times,serif" font-size="14.00" style="">Iterative</text>
+<text text-anchor="middle" x="570.92" y="-540.14" font-family="Times,serif" font-size="14.00" style="">Cycles</text>
+</g>
+<!-- lab_feedback&#45;&gt;iterative_cycles -->
+<g id="edge31" class="edge" data-name="lab_feedback-&gt;iterative_cycles">
+
+<path fill="none" stroke="black" d="M660.15,-1093.08C658.18,-1072.98 655.45,-1045.46 652.92,-1021.24 647.4,-968.51 648.02,-955.05 639.92,-902.65 626.74,-817.42 620.21,-796.56 598.92,-712.99 594.82,-696.9 592.35,-693.24 588.92,-676.99 583.09,-649.35 578.52,-617.83 575.44,-593.58" style=""/>
+<polygon fill="black" stroke="black" points="578.94,-593.31 574.24,-583.81 571.99,-594.17 578.94,-593.31" style=""/>
+</g>
+<!-- design_choices -->
+<g id="node23" class="node" pointer-events="visible" data-name="design_choices">
+
+<ellipse fill="lightyellow" stroke="black" cx="709.92" cy="-742.4" rx="43.41" ry="29.33" style=""/>
+<text text-anchor="middle" x="709.92" y="-746.6" font-family="Times,serif" font-size="14.00" style="">Design</text>
+<text text-anchor="middle" x="709.92" y="-729.8" font-family="Times,serif" font-size="14.00" style="">Choices</text>
+</g>
+<!-- lab_feedback&#45;&gt;design_choices -->
+<g id="edge50" class="edge" data-name="lab_feedback-&gt;design_choices">
+
+<path fill="none" stroke="black" d="M677.39,-1094.17C682.59,-1083.01 687.91,-1069.81 690.92,-1057.24 714,-960.95 713.91,-843.53 711.9,-783.29" style=""/>
+<polygon fill="black" stroke="black" points="715.4,-783.4 711.53,-773.53 708.41,-783.66 715.4,-783.4" style=""/>
+</g>
+<!-- doubt_resolution -->
+<g id="node3" class="node" pointer-events="visible" data-name="doubt_resolution">
+
+<ellipse fill="lightgreen" stroke="black" cx="168.92" cy="-742.4" rx="54.43" ry="29.33" style=""/>
+<text text-anchor="middle" x="168.92" y="-746.6" font-family="Times,serif" font-size="14.00" style="">Doubt</text>
+<text text-anchor="middle" x="168.92" y="-729.8" font-family="Times,serif" font-size="14.00" style="">Resolution</text>
+</g>
+<!-- doubt_resolution&#45;&gt;knowledge -->
+<g id="edge12" class="edge" data-name="doubt_resolution-&gt;knowledge">
+
+<path fill="none" stroke="black" d="M168.78,-712.79C169.48,-644.2 177.37,-466.23 236.92,-333.66 243.42,-319.18 254,-305.2 263.92,-293.99" style=""/>
+<polygon fill="black" stroke="black" points="266.4,-296.46 270.62,-286.74 261.26,-291.71 266.4,-296.46" style=""/>
+</g>
+<!-- Doubt -->
+<g id="node19" class="node" pointer-events="visible" data-name="Doubt">
+
+<ellipse fill="lightpink" stroke="black" cx="458.92" cy="-184.83" rx="35.36" ry="18" style=""/>
+<text text-anchor="middle" x="458.92" y="-180.63" font-family="Times,serif" font-size="14.00" style="">Doubt</text>
+</g>
+<!-- doubt_resolution&#45;&gt;Doubt -->
+<g id="edge41" class="edge" data-name="doubt_resolution-&gt;Doubt">
+
+<path fill="none" stroke="black" d="M159.56,-701.88C139.97,-608.34 105.61,-371.3 223.92,-238.83 230.71,-231.23 363.51,-204.46 426.41,-192.13" style=""/>
+<polygon fill="black" stroke="black" points="156.13,-702.57 161.66,-711.6 162.97,-701.09 156.13,-702.57" style=""/>
+</g>
+<!-- lectures -->
+<g id="node4" class="node" pointer-events="visible" data-name="lectures">
+
+<ellipse fill="lightgreen" stroke="black" cx="200.92" cy="-1039.24" rx="44.06" ry="18" style=""/>
+<text text-anchor="middle" x="200.92" y="-1035.04" font-family="Times,serif" font-size="14.00" style="">Lectures</text>
+</g>
+<!-- lectures&#45;&gt;doubt_resolution -->
+<g id="edge4" class="edge" data-name="lectures-&gt;doubt_resolution">
+
+<path fill="none" stroke="black" d="M199.06,-1021.11C194.07,-975.18 180.31,-848.33 173.23,-783.17" style=""/>
+<polygon fill="black" stroke="black" points="176.72,-782.82 172.16,-773.26 169.76,-783.58 176.72,-782.82" style=""/>
+</g>
+<!-- lectures&#45;&gt;jit_concept -->
+<g id="edge7" class="edge" data-name="lectures-&gt;jit_concept">
+
+<path fill="none" stroke="black" d="M216.77,-1021.99C226.29,-1012.23 238.89,-999.31 251.04,-986.86" style=""/>
+<polygon fill="black" stroke="black" points="253.39,-989.46 257.86,-979.86 248.38,-984.57 253.39,-989.46" style=""/>
+</g>
+<!-- worked_examples -->
+<g id="node6" class="node" pointer-events="visible" data-name="worked_examples">
+
+<ellipse fill="lightgreen" stroke="black" cx="86.92" cy="-943.95" rx="86.84" ry="29.33" style=""/>
+<text text-anchor="middle" x="86.92" y="-948.15" font-family="Times,serif" font-size="14.00" style="">Worked Examples</text>
+<text text-anchor="middle" x="86.92" y="-931.35" font-family="Times,serif" font-size="14.00" style="">and Demonstration</text>
+</g>
+<!-- lectures&#45;&gt;worked_examples -->
+<g id="edge8" class="edge" data-name="lectures-&gt;worked_examples">
+
+<path fill="none" stroke="black" d="M181.84,-1022.62C167.24,-1010.68 146.57,-993.76 128.24,-978.76" style=""/>
+<polygon fill="black" stroke="black" points="130.6,-976.17 120.64,-972.54 126.16,-981.58 130.6,-976.17" style=""/>
+</g>
+<!-- sequential_pipeline -->
+<g id="node9" class="node" pointer-events="visible" data-name="sequential_pipeline">
+
+<ellipse fill="lightyellow" stroke="black" cx="404.92" cy="-837.23" rx="50.19" ry="29.33" style=""/>
+<text text-anchor="middle" x="404.92" y="-841.43" font-family="Times,serif" font-size="14.00" style="">Project</text>
+<text text-anchor="middle" x="404.92" y="-824.63" font-family="Times,serif" font-size="14.00" style="">Time-line</text>
+</g>
+<!-- jit_concept&#45;&gt;sequential_pipeline -->
+<g id="edge10" class="edge" data-name="jit_concept-&gt;sequential_pipeline">
+
+<path fill="none" stroke="black" d="M327.36,-910.1C341.08,-897.39 356.74,-882.88 370.37,-870.24" style=""/>
+<polygon fill="black" stroke="black" points="372.5,-873.05 377.46,-863.68 367.74,-867.91 372.5,-873.05" style=""/>
+</g>
+<!-- jit_concept&#45;&gt;knowledge -->
+<g id="edge11" class="edge" data-name="jit_concept-&gt;knowledge">
+
+<path fill="none" stroke="black" d="M278.83,-903.31C266.83,-863.39 250.92,-799.81 250.92,-743.4 250.92,-743.4 250.92,-743.4 250.92,-456.91 250.92,-399.32 268.32,-333.73 279.57,-297.34" style=""/>
+<polygon fill="black" stroke="black" points="282.84,-298.64 282.52,-288.04 276.16,-296.52 282.84,-298.64" style=""/>
+</g>
+<!-- worked_examples&#45;&gt;doubt_resolution -->
+<g id="edge9" class="edge" data-name="worked_examples-&gt;doubt_resolution">
+
+<path fill="none" stroke="black" d="M98.49,-914.78C112.78,-880.02 137.14,-820.74 153.13,-781.83" style=""/>
+<polygon fill="black" stroke="black" points="156.26,-783.41 156.83,-772.83 149.79,-780.75 156.26,-783.41" style=""/>
+</g>
+<!-- worked_examples&#45;&gt;knowledge -->
+<g id="edge14" class="edge" data-name="worked_examples-&gt;knowledge">
+
+<path fill="none" stroke="black" d="M86.92,-914.2C86.92,-875.42 86.92,-804.2 86.92,-743.4 86.92,-743.4 86.92,-743.4 86.92,-646.57 86.92,-496.82 124.04,-454.93 211.92,-333.66 223.78,-317.3 240.69,-302.55 255.64,-291.3" style=""/>
+<polygon fill="black" stroke="black" points="257.38,-294.37 263.41,-285.66 253.26,-288.7 257.38,-294.37" style=""/>
+</g>
+<!-- community_exemplars -->
+<g id="node7" class="node" pointer-events="visible" data-name="community_exemplars">
+
+<ellipse fill="cyan" stroke="black" cx="302.92" cy="-1122.66" rx="44.65" ry="18" style=""/>
+<text text-anchor="middle" x="302.92" y="-1118.46" font-family="Times,serif" font-size="14.00" style="">Past PLs</text>
+</g>
+<!-- community_exemplars&#45;&gt;worked_examples -->
+<g id="edge26" class="edge" data-name="community_exemplars-&gt;worked_examples">
+
+<path fill="none" stroke="black" d="M274.68,-1108.28C264.15,-1103.4 252.04,-1097.94 240.92,-1093.24 200.09,-1076 181.2,-1086.51 147.92,-1057.24 125.67,-1037.68 110.03,-1007.96 100.16,-984.02" style=""/>
+<polygon fill="black" stroke="black" points="103.49,-982.92 96.59,-974.88 96.98,-985.47 103.49,-982.92" style=""/>
+</g>
+<!-- community_exemplars&#45;&gt;sequential_pipeline -->
+<g id="edge25" class="edge" data-name="community_exemplars-&gt;sequential_pipeline">
+
+<path fill="none" stroke="black" d="M311.26,-1104.73C323.61,-1079.24 347.02,-1029.29 362.92,-985.24 375.86,-949.38 387.5,-907.47 395.23,-877.6" style=""/>
+<polygon fill="black" stroke="black" points="398.53,-878.8 397.62,-868.25 391.75,-877.07 398.53,-878.8" style=""/>
+</g>
+<!-- prog_assignments -->
+<g id="node8" class="node" pointer-events="visible" data-name="prog_assignments">
+
+<ellipse fill="purple" stroke="black" cx="438.92" cy="-101.42" rx="65.51" ry="29.33" style=""/>
+<text text-anchor="middle" x="438.92" y="-105.62" font-family="Times,serif" font-size="14.00" fill="white" style="">Programming</text>
+<text text-anchor="middle" x="438.92" y="-88.82" font-family="Times,serif" font-size="14.00" fill="white" style="">Assignments</text>
+</g>
+<!-- prog_assignments&#45;&gt;lab_monitoring -->
+<g id="edge38" class="edge" data-name="prog_assignments-&gt;lab_monitoring">
+
+<path fill="none" stroke="black" d="M498.03,-114.41C567.22,-131.24 681.43,-168.06 752.92,-238.83 851.32,-336.25 851.06,-387.9 879.92,-523.33 931.96,-767.58 668.37,-1007.58 565.04,-1090.87" style=""/>
+<polygon fill="black" stroke="black" points="562.95,-1088.06 557.32,-1097.04 567.32,-1093.53 562.95,-1088.06" style=""/>
+</g>
+<!-- prog_assignments&#45;&gt;knowledge -->
+<g id="edge17" class="edge" data-name="prog_assignments-&gt;knowledge">
+
+<path fill="none" stroke="black" d="M425.75,-130.64C411.74,-151.31 389.49,-179.67 367.92,-202.83 354.22,-217.54 337.72,-232.83 323.21,-244.82" style=""/>
+<polygon fill="black" stroke="black" points="321.27,-241.89 315.66,-250.87 325.65,-247.35 321.27,-241.89" style=""/>
+</g>
+<!-- Grade -->
+<g id="node18" class="node" pointer-events="visible" data-name="Grade">
+
+<ellipse fill="black" stroke="black" cx="651.92" cy="-18" rx="34.75" ry="18" style=""/>
+<text text-anchor="middle" x="651.92" y="-13.8" font-family="Times,serif" font-size="14.00" fill="white" style="">Grade</text>
+</g>
+<!-- prog_assignments&#45;&gt;Grade -->
+<g id="edge37" class="edge" data-name="prog_assignments-&gt;Grade">
+
+<path fill="none" stroke="black" d="M488.05,-81.64C526.46,-66.95 579.07,-46.85 614.21,-33.41" style=""/>
+<polygon fill="black" stroke="black" points="615.01,-36.85 623.11,-30.01 612.51,-30.31 615.01,-36.85" style=""/>
+</g>
+<!-- sequential_pipeline&#45;&gt;lab_monitoring -->
+<g id="edge30" class="edge" data-name="sequential_pipeline-&gt;lab_monitoring">
+
+<path fill="none" stroke="black" d="M409.9,-866.57C418.27,-909.69 437.69,-993.48 471.92,-1057.24 477.58,-1067.78 485.1,-1078.22 492.7,-1087.54" style=""/>
+<polygon fill="black" stroke="black" points="489.83,-1089.57 498.97,-1094.93 495.17,-1085.04 489.83,-1089.57" style=""/>
+</g>
+<!-- sequential_pipeline&#45;&gt;prog_assignments -->
+<g id="edge15" class="edge" data-name="sequential_pipeline-&gt;prog_assignments">
+
+<path fill="none" stroke="black" d="M375.58,-813.19C298.99,-750.19 98.92,-566.28 98.92,-364.08 98.92,-364.08 98.92,-364.08 98.92,-267.25 98.92,-150.87 262.21,-116.63 362.47,-106.58" style=""/>
+<polygon fill="black" stroke="black" points="362.63,-110.08 372.26,-105.66 361.98,-103.11 362.63,-110.08" style=""/>
+</g>
+<!-- sequential_pipeline&#45;&gt;iterative_cycles -->
+<g id="edge16" class="edge" data-name="sequential_pipeline-&gt;iterative_cycles">
+
+<path fill="none" stroke="black" d="M417.07,-808.34C436.09,-765.83 475.17,-682.93 517.92,-618.16 524.88,-607.61 533.26,-596.76 541.27,-587.05" style=""/>
+<polygon fill="black" stroke="black" points="543.74,-589.55 547.51,-579.65 538.39,-585.04 543.74,-589.55" style=""/>
+</g>
+<!-- sequential_pipeline&#45;&gt;design_choices -->
+<g id="edge47" class="edge" data-name="sequential_pipeline-&gt;design_choices">
+
+<path fill="none" stroke="black" d="M448.94,-822.84C504.89,-805.81 601.22,-776.49 659.9,-758.63" style=""/>
+<polygon fill="black" stroke="black" points="660.75,-762.03 669.3,-755.77 658.71,-755.33 660.75,-762.03" style=""/>
+</g>
+<!-- knowledge&#45;&gt;prog_assignments -->
+<g id="edge32" class="edge" data-name="knowledge-&gt;prog_assignments">
+
+<path fill="none" stroke="black" d="M301.5,-250.25C314.42,-237.68 334.05,-219.87 349.92,-202.83 369.28,-182.04 389.2,-157.05 405.43,-137.21" style=""/>
+<polygon fill="black" stroke="black" points="407.99,-139.6 411.65,-129.65 402.59,-135.15 407.99,-139.6" style=""/>
+</g>
+<!-- knowledge&#45;&gt;iterative_cycles -->
+<g id="edge18" class="edge" data-name="knowledge-&gt;iterative_cycles">
+
+<path fill="none" stroke="black" d="M299.04,-286.19C317.54,-326.46 358.14,-428.91 424.92,-487.33 452.17,-511.16 489.48,-527.03 519.63,-537.06" style=""/>
+<polygon fill="black" stroke="black" points="518.36,-540.32 528.95,-540.03 520.48,-533.66 518.36,-540.32" style=""/>
+</g>
+<!-- peer_learning -->
+<g id="node14" class="node" pointer-events="visible" data-name="peer_learning">
+
+<ellipse fill="lightyellow" stroke="black" cx="457.92" cy="-363.08" rx="47.09" ry="29.33" style=""/>
+<text text-anchor="middle" x="457.92" y="-367.28" font-family="Times,serif" font-size="14.00" style="">Group</text>
+<text text-anchor="middle" x="457.92" y="-350.48" font-family="Times,serif" font-size="14.00" style="">Learning</text>
+</g>
+<!-- knowledge&#45;&gt;peer_learning -->
+<g id="edge1" class="edge" data-name="knowledge-&gt;peer_learning">
+
+<path fill="none" stroke="black" d="M319.94,-283.52C346.98,-297.38 386.23,-318.73 416.02,-335.68" style=""/>
+<polygon fill="black" stroke="black" points="414,-338.56 424.42,-340.49 417.48,-332.48 414,-338.56" style=""/>
+</g>
+<!-- examinations -->
+<g id="node17" class="node" pointer-events="visible" data-name="examinations">
+
+<ellipse fill="brown" stroke="black" cx="285.92" cy="-184.83" rx="64.28" ry="18" style=""/>
+<text text-anchor="middle" x="285.92" y="-180.63" font-family="Times,serif" font-size="14.00" fill="white" style="">Examinations</text>
+</g>
+<!-- knowledge&#45;&gt;examinations -->
+<g id="edge29" class="edge" data-name="knowledge-&gt;examinations">
+
+<path fill="none" stroke="black" d="M288.28,-249.98C287.9,-239.62 287.41,-226.18 286.97,-214.29" style=""/>
+<polygon fill="black" stroke="black" points="290.48,-214.45 286.61,-204.59 283.48,-214.71 290.48,-214.45" style=""/>
+</g>
+<!-- knowledge&#45;&gt;Doubt -->
+<g id="edge13" class="edge" data-name="knowledge-&gt;Doubt">
+
+<path fill="none" stroke="black" d="M318.92,-252.88C348.08,-238.91 392.38,-217.7 423.31,-202.88" style=""/>
+<polygon fill="black" stroke="black" points="424.77,-206.06 432.28,-198.59 421.75,-199.75 424.77,-206.06" style=""/>
+</g>
+<!-- iterative_cycles&#45;&gt;lab_monitoring -->
+<g id="edge5" class="edge" data-name="iterative_cycles-&gt;lab_monitoring">
+
+<path fill="none" stroke="black" d="M563.24,-582.08C560.5,-593.25 557.66,-606.23 555.92,-618.16 530.9,-789.3 526.03,-996.05 525.12,-1081.61" style=""/>
+<polygon fill="black" stroke="black" points="521.62,-1081.55 525.02,-1091.58 528.62,-1081.61 521.62,-1081.55" style=""/>
+</g>
+<!-- iterative_cycles&#45;&gt;knowledge -->
+<g id="edge19" class="edge" data-name="iterative_cycles-&gt;knowledge">
+
+<path fill="none" stroke="black" d="M528.52,-543.98C492.49,-535.07 441.57,-517.64 406.92,-487.33 345.64,-433.72 306.41,-343.03 292.94,-297.34" style=""/>
+<polygon fill="black" stroke="black" points="296.39,-296.69 290.41,-287.95 289.63,-298.51 296.39,-296.69" style=""/>
+</g>
+<!-- social_accountability -->
+<g id="node13" class="node" pointer-events="visible" data-name="social_accountability">
+
+<ellipse fill="lightyellow" stroke="black" cx="655.92" cy="-268.25" rx="59.34" ry="29.33" style=""/>
+<text text-anchor="middle" x="655.92" y="-272.45" font-family="Times,serif" font-size="14.00" style="">Respect and</text>
+<text text-anchor="middle" x="655.92" y="-255.65" font-family="Times,serif" font-size="14.00" style="">Belonging</text>
+</g>
+<!-- iterative_cycles&#45;&gt;social_accountability -->
+<g id="edge20" class="edge" data-name="iterative_cycles-&gt;social_accountability">
+
+<path fill="none" stroke="black" d="M574.19,-523.12C582.61,-491.35 600.26,-438.5 613.92,-392.49 622.3,-364.26 630.88,-332.12 638.44,-307.73" style=""/>
+<polygon fill="black" stroke="black" points="641.77,-308.81 641.5,-298.22 635.11,-306.67 641.77,-308.81" style=""/>
+</g>
+<!-- Product -->
+<g id="node15" class="node" pointer-events="visible" data-name="Product">
+
+<ellipse fill="orange" stroke="black" cx="771.92" cy="-101.42" rx="48.92" ry="29.33" style=""/>
+<text text-anchor="middle" x="771.92" y="-105.62" font-family="Times,serif" font-size="14.00" style="">Final</text>
+<text text-anchor="middle" x="771.92" y="-88.82" font-family="Times,serif" font-size="14.00" style="">Compiler</text>
+</g>
+<!-- iterative_cycles&#45;&gt;Product -->
+<g id="edge33" class="edge" data-name="iterative_cycles-&gt;Product">
+
+<path fill="none" stroke="black" d="M595.68,-528.31C637.83,-486.61 722.33,-394.73 756.92,-297.66 775.2,-246.36 776.48,-182.82 774.87,-142.43" style=""/>
+<polygon fill="black" stroke="black" points="778.38,-142.52 774.4,-132.7 771.39,-142.86 778.38,-142.52" style=""/>
+</g>
+<!-- iterative_cycles&#45;&gt;Doubt -->
+<g id="edge39" class="edge" data-name="iterative_cycles-&gt;Doubt">
+
+<path fill="none" stroke="black" d="M570.51,-523.17C568.57,-465.89 558.49,-334.32 507.92,-238.83 502.11,-227.87 493.47,-217.46 485.05,-208.81" style=""/>
+<polygon fill="black" stroke="black" points="487.51,-206.32 477.91,-201.86 482.63,-211.34 487.51,-206.32" style=""/>
+</g>
+<!-- individual_impl -->
+<g id="node20" class="node" pointer-events="visible" data-name="individual_impl">
+
+<ellipse fill="lightyellow" stroke="black" cx="709.92" cy="-647.57" rx="73.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="709.92" y="-651.77" font-family="Times,serif" font-size="14.00" style="">Individual</text>
+<text text-anchor="middle" x="709.92" y="-634.97" font-family="Times,serif" font-size="14.00" style="">Implementation</text>
+</g>
+<!-- iterative_cycles&#45;&gt;individual_impl -->
+<g id="edge44" class="edge" data-name="iterative_cycles-&gt;individual_impl">
+
+<path fill="none" stroke="black" d="M604.08,-572.21C623.35,-584.26 647.71,-600.32 668.24,-614.43" style=""/>
+<polygon fill="black" stroke="black" points="666.22,-617.28 676.43,-620.1 670.2,-611.53 666.22,-617.28" style=""/>
+</g>
+<!-- iterative_cycles&#45;&gt;peer_explain -->
+<g id="edge54" class="edge" data-name="iterative_cycles-&gt;peer_explain">
+
+<path fill="none" stroke="black" d="M548.06,-527.35C538.35,-516.99 526.86,-504.73 516.3,-493.46" style=""/>
+<polygon fill="black" stroke="black" points="518.88,-491.1 509.49,-486.19 513.77,-495.88 518.88,-491.1" style=""/>
+</g>
+<!-- iterative_cycles&#45;&gt;design_choices -->
+<g id="edge46" class="edge" data-name="iterative_cycles-&gt;design_choices">
+
+<path fill="none" stroke="black" d="M579.3,-581.79C588.16,-608.24 604.04,-648.03 626.92,-676.99 638.51,-691.66 654.14,-704.92 668.7,-715.53" style=""/>
+<polygon fill="black" stroke="black" points="666.63,-718.36 676.82,-721.25 670.66,-712.63 666.63,-718.36" style=""/>
+</g>
+<!-- fair_distribution -->
+<g id="node12" class="node" pointer-events="visible" data-name="fair_distribution">
+
+<ellipse fill="orangered" stroke="black" cx="651.92" cy="-101.42" rx="53.34" ry="18" style=""/>
+<text text-anchor="middle" x="651.92" y="-97.22" font-family="Times,serif" font-size="14.00" fill="white" style="">Mark-Split</text>
+</g>
+<!-- fair_distribution&#45;&gt;Grade -->
+<g id="edge35" class="edge" data-name="fair_distribution-&gt;Grade">
+
+<path fill="none" stroke="black" d="M651.92,-83.15C651.92,-72.79 651.92,-59.35 651.92,-47.45" style=""/>
+<polygon fill="black" stroke="black" points="655.42,-47.75 651.92,-37.75 648.42,-47.75 655.42,-47.75" style=""/>
+</g>
+<!-- social_accountability&#45;&gt;iterative_cycles -->
+<g id="edge21" class="edge" data-name="social_accountability-&gt;iterative_cycles">
+
+<path fill="none" stroke="black" d="M655.87,-297.76C651.34,-322.82 641.5,-360.22 631.92,-392.49 619.39,-434.7 603.49,-482.68 590.73,-514.84" style=""/>
+<polygon fill="black" stroke="black" points="587.65,-513.13 587.11,-523.71 594.13,-515.78 587.65,-513.13" style=""/>
+</g>
+<!-- social_accountability&#45;&gt;fair_distribution -->
+<g id="edge24" class="edge" data-name="social_accountability-&gt;fair_distribution">
+
+<path fill="none" stroke="black" d="M655.22,-238.54C654.49,-208.38 653.35,-161.23 652.61,-131.09" style=""/>
+<polygon fill="black" stroke="black" points="656.12,-131.11 652.37,-121.2 649.12,-131.28 656.12,-131.11" style=""/>
+</g>
+<!-- social_accountability&#45;&gt;peer_learning -->
+<g id="edge22" class="edge" data-name="social_accountability-&gt;peer_learning">
+
+<path fill="none" stroke="black" d="M616.4,-290.48C584.85,-305.9 540.62,-326.62 506.84,-341.81" style=""/>
+<polygon fill="black" stroke="black" points="505.81,-338.44 498.11,-345.71 508.66,-344.83 505.81,-338.44" style=""/>
+</g>
+<!-- peer_learning&#45;&gt;knowledge -->
+<g id="edge2" class="edge" data-name="peer_learning-&gt;knowledge">
+
+<path fill="none" stroke="black" d="M420.72,-344.62C391.23,-329.32 350.54,-307.04 322.13,-290.67" style=""/>
+<polygon fill="black" stroke="black" points="323.97,-287.69 313.57,-285.69 320.45,-293.74 323.97,-287.69" style=""/>
+</g>
+<!-- peer_learning&#45;&gt;social_accountability -->
+<g id="edge23" class="edge" data-name="peer_learning-&gt;social_accountability">
+
+<path fill="none" stroke="black" d="M492.89,-343.07C522.73,-328.41 566,-308.06 600.51,-292.44" style=""/>
+<polygon fill="black" stroke="black" points="601.86,-295.67 609.54,-288.38 598.98,-289.29 601.86,-295.67" style=""/>
+</g>
+<!-- Product&#45;&gt;Grade -->
+<g id="edge34" class="edge" data-name="Product-&gt;Grade">
+
+<path fill="none" stroke="black" d="M736.99,-80.71C718.1,-68.64 695.25,-53.17 677.92,-40.75" style=""/>
+<polygon fill="black" stroke="black" points="680.29,-38.14 670.14,-35.08 676.17,-43.8 680.29,-38.14" style=""/>
+</g>
+<!-- Product&#45;&gt;Grade -->
+<g id="edge58" class="edge" data-name="Product-&gt;Grade">
+
+<path fill="none" stroke="black" d="M743.7,-77.09C726.12,-64.56 703.54,-49.33 685.11,-37.6" style=""/>
+<polygon fill="black" stroke="black" points="686.97,-34.64 676.64,-32.3 683.26,-40.57 686.97,-34.64" style=""/>
+</g>
+<!-- slides_notes -->
+<g id="node16" class="node" pointer-events="visible" data-name="slides_notes">
+
+<ellipse fill="cyan" stroke="black" cx="144.92" cy="-1122.66" rx="87.43" ry="18" style=""/>
+<text text-anchor="middle" x="144.92" y="-1118.46" font-family="Times,serif" font-size="14.00" style="">Slides, Notes, Code</text>
+</g>
+<!-- slides_notes&#45;&gt;lectures -->
+<g id="edge27" class="edge" data-name="slides_notes-&gt;lectures">
+
+<path fill="none" stroke="black" d="M156.79,-1104.39C164.39,-1093.34 174.4,-1078.8 182.96,-1066.35" style=""/>
+<polygon fill="black" stroke="black" points="185.8,-1068.39 188.58,-1058.17 180.03,-1064.43 185.8,-1068.39" style=""/>
+</g>
+<!-- slides_notes&#45;&gt;worked_examples -->
+<g id="edge28" class="edge" data-name="slides_notes-&gt;worked_examples">
+
+<path fill="none" stroke="black" d="M135.33,-1104.32C128.6,-1091.59 119.79,-1073.72 113.92,-1057.24 105.53,-1033.7 98.91,-1006.48 94.33,-984.73" style=""/>
+<polygon fill="black" stroke="black" points="97.79,-984.16 92.36,-975.07 90.93,-985.56 97.79,-984.16" style=""/>
+</g>
+<!-- examinations&#45;&gt;Grade -->
+<g id="edge36" class="edge" data-name="examinations-&gt;Grade">
+
+<path fill="none" stroke="black" d="M292.8,-166.63C303.82,-141.49 327.89,-95.19 363.92,-72 403.4,-46.59 535.85,-30.25 606.55,-23.13" style=""/>
+<polygon fill="black" stroke="black" points="606.64,-26.64 616.25,-22.17 605.95,-19.67 606.64,-26.64" style=""/>
+</g>
+<!-- Doubt&#45;&gt;jit_concept -->
+<g id="edge57" class="edge" data-name="Doubt-&gt;jit_concept">
+
+<path fill="none" stroke="black" d="M444.79,-201.62C410.74,-241.39 326.92,-350.13 326.92,-456.91 326.92,-743.4 326.92,-743.4 326.92,-743.4 326.92,-794.57 315.61,-852.03 305.86,-892.1" style=""/>
+<polygon fill="black" stroke="black" points="302.48,-891.16 303.46,-901.71 309.27,-892.85 302.48,-891.16" style=""/>
+</g>
+<!-- Doubt&#45;&gt;prog_assignments -->
+<g id="edge40" class="edge" data-name="Doubt-&gt;prog_assignments">
+
+<path fill="none" stroke="black" d="M451.97,-155.53C450.01,-147.55 447.87,-138.86 445.91,-130.87" style=""/>
+<polygon fill="black" stroke="black" points="448.53,-156.22 454.32,-165.1 455.33,-154.55 448.53,-156.22" style=""/>
+</g>
+<!-- Doubt&#45;&gt;peer_learning -->
+<g id="edge61" class="edge" data-name="Doubt-&gt;peer_learning">
+
+<path fill="none" stroke="black" d="M458.82,-203.28C458.66,-230.69 458.36,-284.53 458.15,-321.88" style=""/>
+<polygon fill="black" stroke="black" points="454.65,-321.84 458.09,-331.86 461.65,-321.88 454.65,-321.84" style=""/>
+</g>
+<!-- individual_impl&#45;&gt;iterative_cycles -->
+<g id="edge43" class="edge" data-name="individual_impl-&gt;iterative_cycles">
+
+<path fill="none" stroke="black" d="M668.51,-622.91C649.24,-610.65 626.56,-595.57 607.88,-582.63" style=""/>
+<polygon fill="black" stroke="black" points="609.95,-579.81 599.75,-576.95 605.94,-585.55 609.95,-579.81" style=""/>
+</g>
+<!-- individual_impl&#45;&gt;Grade -->
+<g id="edge60" class="edge" data-name="individual_impl-&gt;Grade">
+
+<path fill="none" stroke="black" d="M714.88,-617.92C720,-592.28 729.31,-554.11 743.92,-523.33 781.13,-444.92 856.92,-450.86 856.92,-364.08 856.92,-364.08 856.92,-364.08 856.92,-183.83 856.92,-132.7 865.11,-109.09 829.92,-72 795.88,-36.13 738.74,-24.22 698.4,-20.43" style=""/>
+<polygon fill="black" stroke="black" points="698.73,-16.94 688.49,-19.65 698.18,-23.92 698.73,-16.94" style=""/>
+</g>
+<!-- individual_impl&#45;&gt;Doubt -->
+<g id="edge53" class="edge" data-name="individual_impl-&gt;Doubt">
+
+<path fill="none" stroke="black" d="M709.75,-618.17C709.7,-593.19 709.85,-555.83 710.92,-523.33 715.07,-396.82 805.35,-335.73 723.92,-238.83 694.02,-203.25 563.2,-213.28 517.92,-202.83 511.88,-201.44 505.54,-199.8 499.35,-198.1" style=""/>
+<polygon fill="black" stroke="black" points="500.5,-194.79 489.92,-195.43 498.59,-201.53 500.5,-194.79" style=""/>
+</g>
+<!-- individual_impl&#45;&gt;individual_explain -->
+<g id="edge42" class="edge" data-name="individual_impl-&gt;individual_explain">
+
+<path fill="none" stroke="black" d="M738.87,-620.22C750.46,-609.68 763.91,-597.43 776.1,-586.34" style=""/>
+<polygon fill="black" stroke="black" points="778.14,-589.22 783.18,-579.9 773.42,-584.04 778.14,-589.22" style=""/>
+</g>
+<!-- individual_explain&#45;&gt;design_choices -->
+<g id="edge45" class="edge" data-name="individual_explain-&gt;design_choices">
+
+<path fill="none" stroke="black" d="M813.33,-582.4C813.33,-608.73 809.99,-647.97 792.92,-676.99 783.34,-693.26 767.94,-706.91 752.99,-717.39" style=""/>
+<polygon fill="black" stroke="black" points="751.44,-714.21 745.05,-722.66 755.32,-720.04 751.44,-714.21" style=""/>
+</g>
+<!-- peer_explain&#45;&gt;peer_learning -->
+<g id="edge56" class="edge" data-name="peer_explain-&gt;peer_learning">
+
+<path fill="none" stroke="black" d="M475.98,-428.55C473.73,-420.54 471.25,-411.69 468.87,-403.17" style=""/>
+<polygon fill="black" stroke="black" points="472.29,-402.4 466.22,-393.72 465.55,-404.29 472.29,-402.4" style=""/>
+</g>
+<!-- peer_explain&#45;&gt;Grade -->
+<g id="edge59" class="edge" data-name="peer_explain-&gt;Grade">
+
+<path fill="none" stroke="black" d="M506.14,-430.52C514.46,-419.4 523.25,-405.94 528.92,-392.49 585.24,-258.88 517.14,-197.41 589.92,-72 597.41,-59.08 609.26,-47.81 620.59,-39.03" style=""/>
+<polygon fill="black" stroke="black" points="622.65,-41.86 628.67,-33.14 618.52,-36.2 622.65,-41.86" style=""/>
+</g>
+<!-- peer_explain&#45;&gt;Doubt -->
+<g id="edge55" class="edge" data-name="peer_explain-&gt;Doubt">
+
+<path fill="none" stroke="black" d="M499.99,-429.31C505.57,-418.25 511.12,-405.14 513.92,-392.49 519.57,-366.97 518.55,-359.4 513.92,-333.66 506,-289.69 485.84,-241.72 472.25,-212.71" style=""/>
+<polygon fill="black" stroke="black" points="475.53,-211.45 468.06,-203.93 469.21,-214.46 475.53,-211.45" style=""/>
+</g>
+<!-- design_choices&#45;&gt;individual_impl -->
+<g id="edge48" class="edge" data-name="design_choices-&gt;individual_impl">
+
+<path fill="none" stroke="black" d="M709.92,-712.79C709.92,-705.12 709.92,-696.67 709.92,-688.51" style=""/>
+<polygon fill="black" stroke="black" points="713.42,-688.76 709.92,-678.76 706.42,-688.76 713.42,-688.76" style=""/>
+</g>
+</g>
+</svg>

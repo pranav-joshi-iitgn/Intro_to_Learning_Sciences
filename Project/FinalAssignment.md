@@ -1,6 +1,6 @@
 ---
 title: "Constructionist Design in Compiler Education:\nA Critical Evaluation of CS 327"
-author: "Pranav Joshi"
+author: "Pranav Joshi, Divya Gautam"
 date: "2 Nov, 2025"
 documentclass: article
 geometry: margin=1in
@@ -107,6 +107,13 @@ Student teams examined each other's PL designs and compiler approaches, using in
 ### Fair Mark Distribution and Social Accountability
 
 The course implemented an innovative solution to the "freeloader problem" common in group projects: rather than assigning identical marks to all team members, the total marks for the project were given to the team, and team members negotiated and justified the distribution of marks to the professor. Critically, this rule was announced only at the end of the semester; had it been explicit from the start, it would have created unhealthy competition and discouraged team formation.
+
+
+### Full Design
+
+![Old Design](OldAS.png){height=400px}
+
+Here, the TAs are present in the blue nodes and the professor is present in the green nodes. The yellow nodes are related to the project.
 
 \newpage
 
@@ -252,3 +259,9 @@ Benefits include:
 - Keep these optional to preserve instrumentality. Students will be motivated to read these either as they face implementation choices requiring each method's understanding or due to curiosity, and will undergo exploration (from cognitive apprenticeship).
 - The final exam should only include concepts covered by approaches implemented by teams
 - Additionally, students can be asked to justify their chosen methods in a brief assignment (around 3% weightage), encouraging lightweight engagement with broader literature despite some initial resistance
+
+\newpage 
+
+### New design at a glance
+
+![New Design](NewAS.png){height=600}

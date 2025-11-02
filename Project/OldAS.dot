@@ -1,0 +1,83 @@
+digraph CourseDesign {
+  rankdir=TD;
+
+    lab_monitoring [label="In-lab\nMonitoring" style=filled fillcolor=lightblue];
+    lab_feedback [label="In-lab\nFeedback" style=filled fillcolor=lightblue];
+    
+    doubt_resolution [label="Doubt\nResolution" style=filled fillcolor=lightgreen];
+    lectures [label="Lectures" style=filled fillcolor=lightgreen];
+    jit_concept [label="Just-in-Time\nConcept\nIntroduction" style=filled fillcolor=lightgreen];
+    worked_examples [label="Worked Examples\nand Demonstration" style=filled fillcolor=lightgreen];
+  
+    community_exemplars [label="Past PLs" style=filled fillcolor=cyan];
+    
+    prog_assignments [label="Programming\nAssignments" style=filled fillcolor=purple fontcolor=white];
+    sequential_pipeline [label="Project\nTime-line" style=filled fillcolor=lightyellow];
+    knowledge [label="Knowledge" style=filled fillcolor=lightpink];
+    iterative_cycles [label="Iterative\nCycles" style=filled fillcolor=lightyellow];
+    fair_distribution [label="Mark-Split" style=filled fillcolor=orangered fontcolor=white];
+    social_accountability [label="Respect and\nBelonging" style=filled fillcolor=lightyellow];
+    peer_learning [label="Group\nLearning" style=filled fillcolor=lightyellow];
+    Product [label="Final\nCompiler" style=filled fillcolor=orange];
+
+    
+    slides_notes [label="Slides, Notes, Code" style=filled fillcolor=cyan];
+    examinations [label="Examinations" style=filled fillcolor=brown fontcolor=white];
+    
+    Grade [label="Grade" style=filled fillcolor = black fontcolor=white]
+
+    knowledge -> peer_learning -> knowledge;
+    Doubt [label="Doubt" style=filled fillcolor=lightpink]
+
+    {rank=same; lab_monitoring, lab_feedback}
+
+  lab_monitoring -> jit_concept [arrowhead=normal];
+  lectures -> doubt_resolution;
+  iterative_cycles -> lab_monitoring -> lab_feedback;
+  
+  lectures -> jit_concept;
+  lectures -> worked_examples -> doubt_resolution;
+  jit_concept -> sequential_pipeline;
+  jit_concept -> knowledge;
+  doubt_resolution -> knowledge;
+  knowledge -> Doubt;
+  
+  worked_examples -> knowledge;
+  
+  sequential_pipeline -> prog_assignments;
+  sequential_pipeline -> iterative_cycles;
+  prog_assignments -> knowledge;
+  knowledge -> iterative_cycles [arrowhead=normal];
+  iterative_cycles -> knowledge [arrowhead=normal];
+  peer_learning -> iterative_cycles -> social_accountability;
+  social_accountability -> iterative_cycles -> peer_learning;
+  social_accountability -> peer_learning;
+  peer_learning -> social_accountability;
+  social_accountability -> fair_distribution;
+  
+  community_exemplars -> sequential_pipeline;
+  community_exemplars -> worked_examples;
+  slides_notes -> lectures;
+  slides_notes -> worked_examples;
+  knowledge -> examinations;
+  
+    sequential_pipeline -> lab_monitoring;
+    lab_feedback -> iterative_cycles;
+    knowledge -> prog_assignments;
+
+
+  iterative_cycles -> Product -> Grade;
+  fair_distribution -> Grade;
+  examinations -> Grade;
+  prog_assignments -> Grade;
+  prog_assignments -> lab_monitoring;
+
+    iterative_cycles -> Doubt;
+    Doubt -> prog_assignments [dir=back];
+    doubt_resolution -> Doubt [dir=back];
+
+    {rank=min; community_exemplars, slides_notes};
+    {rank=same; iterative_cycles, prog_assignments};
+    {rank=same; peer_learning, social_accountability};
+
+}
