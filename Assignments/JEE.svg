@@ -1,0 +1,322 @@
+<svg width="807pt" height="1064pt" viewBox="0.00 0.00 807.00 1064.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1060)">
+<title>JEE_Practice_Workflow</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1060 802.62,-1060 802.62,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_practice</title>
+<polygon fill="none" stroke="#a5b4fc" points="394.62,-675.8 394.62,-1048 756.62,-1048 756.62,-675.8 394.62,-675.8"/>
+<text xml:space="preserve" text-anchor="middle" x="575.62" y="-1033.2" font-family="Times,serif" font-size="12.00">Practice Session (Phase I)</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_review</title>
+<polygon fill="none" stroke="#86efac" points="399.62,-420.6 399.62,-656.8 733.62,-656.8 733.62,-420.6 399.62,-420.6"/>
+<text xml:space="preserve" text-anchor="middle" x="566.62" y="-642" font-family="Times,serif" font-size="12.00">Review &amp; Grading</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_retry</title>
+<polygon fill="none" stroke="#fda4af" points="252.62,-81 252.62,-385.8 500.62,-385.8 500.62,-81 252.62,-81"/>
+<text xml:space="preserve" text-anchor="middle" x="376.62" y="-371" font-family="Times,serif" font-size="12.00">Retry Marked Problems</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_learning</title>
+<polygon fill="none" stroke="#fbcfe8" points="32.62,-8 32.62,-270.6 244.62,-270.6 244.62,-8 32.62,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="138.62" y="-255.8" font-family="Times,serif" font-size="12.00">Learning &amp; Reflection (Phase II)</text>
+</g>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<ellipse fill="#dbeafe" stroke="#333333" cx="759.62" cy="-219.4" rx="31.43" ry="31.43"/>
+<text xml:space="preserve" text-anchor="middle" x="759.62" y="-215.2" font-family="Helvetica,sans-Serif" font-size="14.00">Start</text>
+</g>
+<!-- set_timer -->
+<g id="node3" class="node">
+<title>set_timer</title>
+<path fill="#ffffff" stroke="#333333" d="M689.58,-1017.6C689.58,-1017.6 609.65,-1017.6 609.65,-1017.6 603.65,-1017.6 597.65,-1011.6 597.65,-1005.6 597.65,-1005.6 597.65,-993.6 597.65,-993.6 597.65,-987.6 603.65,-981.6 609.65,-981.6 609.65,-981.6 689.58,-981.6 689.58,-981.6 695.58,-981.6 701.58,-987.6 701.58,-993.6 701.58,-993.6 701.58,-1005.6 701.58,-1005.6 701.58,-1011.6 695.58,-1017.6 689.58,-1017.6"/>
+<text xml:space="preserve" text-anchor="middle" x="649.62" y="-995.4" font-family="Helvetica,sans-Serif" font-size="14.00">Set stopwatch</text>
+</g>
+<!-- start&#45;&gt;set_timer -->
+<g id="edge1" class="edge">
+<title>start-&gt;set_timer</title>
+<path fill="none" stroke="#333333" d="M774.58,-247.42C785.58,-269.81 798.62,-302.84 798.62,-333.6 798.62,-927.6 798.62,-927.6 798.62,-927.6 798.62,-968.02 753.37,-985.45 712.75,-992.96"/>
+<polygon fill="#333333" stroke="#333333" points="702.93,-994.59 712.06,-988.51 706.66,-993.97 712.8,-992.95 712.8,-992.95 712.8,-992.95 706.66,-993.97 713.53,-997.39 702.93,-994.59"/>
+</g>
+<!-- end -->
+<g id="node2" class="node">
+<title>end</title>
+<ellipse fill="#dbeafe" stroke="#333333" cx="639.62" cy="-219.4" rx="28.22" ry="28.22"/>
+<ellipse fill="none" stroke="#333333" cx="639.62" cy="-219.4" rx="32.22" ry="32.22"/>
+<text xml:space="preserve" text-anchor="middle" x="639.62" y="-215.2" font-family="Helvetica,sans-Serif" font-size="14.00">End</text>
+</g>
+<!-- solve_next -->
+<g id="node4" class="node">
+<title>solve_next</title>
+<path fill="#ffffff" stroke="#333333" d="M657.54,-944.6C657.54,-944.6 545.7,-944.6 545.7,-944.6 539.7,-944.6 533.7,-938.6 533.7,-932.6 533.7,-932.6 533.7,-920.6 533.7,-920.6 533.7,-914.6 539.7,-908.6 545.7,-908.6 545.7,-908.6 657.54,-908.6 657.54,-908.6 663.54,-908.6 669.54,-914.6 669.54,-920.6 669.54,-920.6 669.54,-932.6 669.54,-932.6 669.54,-938.6 663.54,-944.6 657.54,-944.6"/>
+<text xml:space="preserve" text-anchor="middle" x="601.62" y="-922.4" font-family="Helvetica,sans-Serif" font-size="14.00">Solve next problem</text>
+</g>
+<!-- set_timer&#45;&gt;solve_next -->
+<g id="edge2" class="edge">
+<title>set_timer-&gt;solve_next</title>
+<path fill="none" stroke="#333333" d="M638,-981.41C632.39,-973.13 625.55,-963.01 619.32,-953.79"/>
+<polygon fill="#333333" stroke="#333333" points="613.81,-945.64 623.14,-951.4 615.93,-948.77 619.41,-953.92 619.41,-953.92 619.41,-953.92 615.93,-948.77 615.68,-956.44 613.81,-945.64"/>
+</g>
+<!-- decision_impasse -->
+<g id="node5" class="node">
+<title>decision_impasse</title>
+<path fill="#fef3c7" stroke="#333333" d="M470.02,-850.17C470.02,-850.17 412.94,-819.83 412.94,-819.83 407.65,-817.02 407.65,-811.38 412.94,-808.57 412.94,-808.57 470.02,-778.23 470.02,-778.23 475.32,-775.42 485.91,-775.42 491.21,-778.23 491.21,-778.23 548.29,-808.57 548.29,-808.57 553.59,-811.38 553.59,-817.02 548.29,-819.83 548.29,-819.83 491.21,-850.17 491.21,-850.17 485.91,-852.98 475.32,-852.98 470.02,-850.17"/>
+<text xml:space="preserve" text-anchor="middle" x="480.62" y="-818.4" font-family="Helvetica,sans-Serif" font-size="14.00">Impasse /</text>
+<text xml:space="preserve" text-anchor="middle" x="480.62" y="-801.6" font-family="Helvetica,sans-Serif" font-size="14.00">Too long?</text>
+</g>
+<!-- solve_next&#45;&gt;decision_impasse -->
+<g id="edge3" class="edge">
+<title>solve_next-&gt;decision_impasse</title>
+<path fill="none" stroke="#333333" d="M582.44,-908.11C564.91,-892.11 538.51,-868.02 516.99,-848.39"/>
+<polygon fill="#333333" stroke="#333333" points="509.6,-841.65 520.02,-845.07 512.4,-844.2 516.99,-848.39 516.99,-848.39 516.99,-848.39 512.4,-844.2 513.96,-851.71 509.6,-841.65"/>
+</g>
+<!-- timer_check -->
+<g id="node7" class="node">
+<title>timer_check</title>
+<path fill="#fef3c7" stroke="#333333" d="M662.09,-850.03C662.09,-850.03 607.24,-819.97 607.24,-819.97 601.97,-817.08 601.97,-811.32 607.24,-808.43 607.24,-808.43 662.09,-778.37 662.09,-778.37 667.35,-775.48 677.88,-775.48 683.14,-778.37 683.14,-778.37 738,-808.43 738,-808.43 743.26,-811.32 743.26,-817.08 738,-819.97 738,-819.97 683.14,-850.03 683.14,-850.03 677.88,-852.92 667.35,-852.92 662.09,-850.03"/>
+<text xml:space="preserve" text-anchor="middle" x="672.62" y="-818.4" font-family="Helvetica,sans-Serif" font-size="14.00">Time up?</text>
+<text xml:space="preserve" text-anchor="middle" x="672.62" y="-801.6" font-family="Helvetica,sans-Serif" font-size="14.00">(1–3 hrs)</text>
+</g>
+<!-- solve_next&#45;&gt;timer_check -->
+<g id="edge7" class="edge">
+<title>solve_next-&gt;timer_check</title>
+<path fill="none" stroke="#333333" d="M619.8,-908.3C624.94,-902.91 630.3,-896.75 634.62,-890.6 641.64,-880.58 648.12,-869.08 653.67,-858.13"/>
+<polygon fill="#333333" stroke="#333333" points="657.95,-849.38 657.6,-860.34 656.29,-852.78 653.55,-858.37 653.55,-858.37 653.55,-858.37 656.29,-852.78 649.51,-856.39 657.95,-849.38"/>
+</g>
+<!-- decision_impasse&#45;&gt;solve_next -->
+<g id="edge5" class="edge">
+<title>decision_impasse-&gt;solve_next</title>
+<path fill="none" stroke="#333333" d="M495.78,-848.27C503.65,-862.68 514.38,-878.91 527.51,-890.6 532.59,-895.13 538.37,-899.2 544.41,-902.81"/>
+<polygon fill="#333333" stroke="#333333" points="552.97,-907.52 542.04,-906.64 549.66,-905.7 544.21,-902.7 544.21,-902.7 544.21,-902.7 549.66,-905.7 546.38,-898.76 552.97,-907.52"/>
+<text xml:space="preserve" text-anchor="middle" x="536.06" y="-878" font-family="Times,serif" font-size="14.00">No</text>
+</g>
+<!-- mark_problem -->
+<g id="node6" class="node">
+<title>mark_problem</title>
+<polygon fill="#fff7ed" stroke="#333333" points="543.41,-719.8 447.83,-719.8 447.83,-683.8 549.41,-683.8 549.41,-713.8 543.41,-719.8"/>
+<polyline fill="none" stroke="#333333" points="543.41,-719.8 543.41,-713.8"/>
+<polyline fill="none" stroke="#333333" points="549.41,-713.8 543.41,-713.8"/>
+<text xml:space="preserve" text-anchor="middle" x="498.62" y="-697.6" font-family="Helvetica,sans-Serif" font-size="14.00">Mark problem</text>
+</g>
+<!-- decision_impasse&#45;&gt;mark_problem -->
+<g id="edge4" class="edge">
+<title>decision_impasse-&gt;mark_problem</title>
+<path fill="none" stroke="#333333" d="M486.76,-775.52C489.12,-761.02 491.78,-744.73 493.98,-731.25"/>
+<polygon fill="#333333" stroke="#333333" points="495.58,-721.44 498.41,-732.03 494.97,-725.17 493.97,-731.31 493.97,-731.31 493.97,-731.31 494.97,-725.17 489.53,-730.59 495.58,-721.44"/>
+<text xml:space="preserve" text-anchor="middle" x="503.68" y="-742" font-family="Times,serif" font-size="14.00">Yes</text>
+</g>
+<!-- mark_problem&#45;&gt;solve_next -->
+<g id="edge6" class="edge">
+<title>mark_problem-&gt;solve_next</title>
+<path fill="none" stroke="#333333" d="M521.57,-720.18C536.91,-733.01 556.28,-751.8 567.62,-772.6 570.61,-778.1 586.89,-854.83 595.79,-897.49"/>
+<polygon fill="#333333" stroke="#333333" points="597.79,-907.09 591.34,-898.21 597.02,-903.38 595.75,-897.3 595.75,-897.3 595.75,-897.3 597.02,-903.38 600.15,-896.38 597.79,-907.09"/>
+</g>
+<!-- timer_check&#45;&gt;solve_next -->
+<g id="edge9" class="edge">
+<title>timer_check-&gt;solve_next</title>
+<path fill="none" stroke="#333333" d="M641.96,-839.32C631.51,-849 620.67,-860.92 613.51,-873.8 609.48,-881.03 606.82,-889.56 605.05,-897.58"/>
+<polygon fill="#333333" stroke="#333333" points="603.33,-907.21 600.66,-896.57 604,-903.48 605.09,-897.36 605.09,-897.36 605.09,-897.36 604,-903.48 609.52,-898.16 603.33,-907.21"/>
+<text xml:space="preserve" text-anchor="middle" x="622.06" y="-878" font-family="Times,serif" font-size="14.00">No</text>
+</g>
+<!-- stop_timer -->
+<g id="node8" class="node">
+<title>stop_timer</title>
+<path fill="#ffffff" stroke="#333333" d="M659.52,-719.8C659.52,-719.8 603.72,-719.8 603.72,-719.8 597.72,-719.8 591.72,-713.8 591.72,-707.8 591.72,-707.8 591.72,-695.8 591.72,-695.8 591.72,-689.8 597.72,-683.8 603.72,-683.8 603.72,-683.8 659.52,-683.8 659.52,-683.8 665.52,-683.8 671.52,-689.8 671.52,-695.8 671.52,-695.8 671.52,-707.8 671.52,-707.8 671.52,-713.8 665.52,-719.8 659.52,-719.8"/>
+<text xml:space="preserve" text-anchor="middle" x="631.62" y="-697.6" font-family="Helvetica,sans-Serif" font-size="14.00">Stop timer</text>
+</g>
+<!-- timer_check&#45;&gt;stop_timer -->
+<g id="edge8" class="edge">
+<title>timer_check-&gt;stop_timer</title>
+<path fill="none" stroke="#333333" d="M659.98,-779.18C654.2,-763.63 647.45,-745.43 641.98,-730.71"/>
+<polygon fill="#333333" stroke="#333333" points="638.51,-721.36 646.21,-729.17 639.83,-724.91 641.99,-730.74 641.99,-730.74 641.99,-730.74 639.83,-724.91 637.77,-732.3 638.51,-721.36"/>
+<text xml:space="preserve" text-anchor="middle" x="660.55" y="-742" font-family="Times,serif" font-size="14.00">Yes</text>
+</g>
+<!-- check_answers -->
+<g id="node9" class="node">
+<title>check_answers</title>
+<path fill="#ffffff" stroke="#333333" d="M713.66,-626.4C713.66,-626.4 511.57,-626.4 511.57,-626.4 505.57,-626.4 499.57,-620.4 499.57,-614.4 499.57,-614.4 499.57,-602.4 499.57,-602.4 499.57,-596.4 505.57,-590.4 511.57,-590.4 511.57,-590.4 713.66,-590.4 713.66,-590.4 719.66,-590.4 725.66,-596.4 725.66,-602.4 725.66,-602.4 725.66,-614.4 725.66,-614.4 725.66,-620.4 719.66,-626.4 713.66,-626.4"/>
+<text xml:space="preserve" text-anchor="middle" x="612.62" y="-604.2" font-family="Helvetica,sans-Serif" font-size="14.00">Check answers vs Model Solution</text>
+</g>
+<!-- stop_timer&#45;&gt;check_answers -->
+<g id="edge10" class="edge">
+<title>stop_timer-&gt;check_answers</title>
+<path fill="none" stroke="#333333" d="M628.04,-683.61C625.35,-670.67 621.61,-652.65 618.48,-637.61"/>
+<polygon fill="#333333" stroke="#333333" points="616.49,-628.02 622.93,-636.89 617.26,-631.72 618.52,-637.81 618.52,-637.81 618.52,-637.81 617.26,-631.72 614.12,-638.72 616.49,-628.02"/>
+</g>
+<!-- decision_correct -->
+<g id="node10" class="node">
+<title>decision_correct</title>
+<path fill="#fef3c7" stroke="#333333" d="M524.02,-550.33C524.02,-550.33 479.24,-538.47 479.24,-538.47 473.44,-536.94 473.44,-533.86 479.24,-532.33 479.24,-532.33 524.02,-520.47 524.02,-520.47 529.82,-518.94 541.42,-518.94 547.22,-520.47 547.22,-520.47 591.99,-532.33 591.99,-532.33 597.79,-533.86 597.79,-536.94 591.99,-538.47 591.99,-538.47 547.22,-550.33 547.22,-550.33 541.42,-551.86 529.82,-551.86 524.02,-550.33"/>
+<text xml:space="preserve" text-anchor="middle" x="535.62" y="-531.2" font-family="Helvetica,sans-Serif" font-size="14.00">Correct?</text>
+</g>
+<!-- check_answers&#45;&gt;decision_correct -->
+<g id="edge11" class="edge">
+<title>check_answers-&gt;decision_correct</title>
+<path fill="none" stroke="#333333" d="M593.98,-590.21C583.19,-580.27 569.55,-567.69 558.17,-557.19"/>
+<polygon fill="#333333" stroke="#333333" points="550.88,-550.48 561.28,-553.95 553.66,-553.04 558.23,-557.26 558.23,-557.26 558.23,-557.26 553.66,-553.04 555.18,-560.56 550.88,-550.48"/>
+</g>
+<!-- record_success -->
+<g id="node11" class="node">
+<title>record_success</title>
+<path fill="#ffffff" stroke="#333333" d="M713.44,-464.6C713.44,-464.6 565.8,-464.6 565.8,-464.6 559.8,-464.6 553.8,-458.6 553.8,-452.6 553.8,-452.6 553.8,-440.6 553.8,-440.6 553.8,-434.6 559.8,-428.6 565.8,-428.6 565.8,-428.6 713.44,-428.6 713.44,-428.6 719.44,-428.6 725.44,-434.6 725.44,-440.6 725.44,-440.6 725.44,-452.6 725.44,-452.6 725.44,-458.6 719.44,-464.6 713.44,-464.6"/>
+<text xml:space="preserve" text-anchor="middle" x="639.62" y="-442.4" font-family="Helvetica,sans-Serif" font-size="14.00">Record technique / score</text>
+</g>
+<!-- decision_correct&#45;&gt;record_success -->
+<g id="edge12" class="edge">
+<title>decision_correct-&gt;record_success</title>
+<path fill="none" stroke="#333333" d="M551.41,-521.22C567.08,-508.14 591.46,-487.79 610.62,-471.8"/>
+<polygon fill="#333333" stroke="#333333" points="618.07,-465.58 613.28,-475.45 615.17,-468.01 610.39,-471.99 610.39,-471.99 610.39,-471.99 615.17,-468.01 607.51,-468.54 618.07,-465.58"/>
+<text xml:space="preserve" text-anchor="middle" x="607.82" y="-486.8" font-family="Times,serif" font-size="14.00">Yes</text>
+</g>
+<!-- add_to_marked -->
+<g id="node12" class="node">
+<title>add_to_marked</title>
+<polygon fill="#fff7ed" stroke="#333333" points="529.64,-464.6 407.59,-464.6 407.59,-428.6 535.64,-428.6 535.64,-458.6 529.64,-464.6"/>
+<polyline fill="none" stroke="#333333" points="529.64,-464.6 529.64,-458.6"/>
+<polyline fill="none" stroke="#333333" points="535.64,-458.6 529.64,-458.6"/>
+<text xml:space="preserve" text-anchor="middle" x="471.62" y="-442.4" font-family="Helvetica,sans-Serif" font-size="14.00">Add to marked list</text>
+</g>
+<!-- decision_correct&#45;&gt;add_to_marked -->
+<g id="edge13" class="edge">
+<title>decision_correct-&gt;add_to_marked</title>
+<path fill="none" stroke="#333333" d="M525.05,-520.07C515.82,-507.55 502.18,-489.05 490.99,-473.88"/>
+<polygon fill="#333333" stroke="#333333" points="485.13,-465.93 494.69,-471.31 487.37,-468.97 491.06,-473.98 491.06,-473.98 491.06,-473.98 487.37,-468.97 487.44,-476.65 485.13,-465.93"/>
+<text xml:space="preserve" text-anchor="middle" x="517.9" y="-486.8" font-family="Times,serif" font-size="14.00">No</text>
+</g>
+<!-- record_success&#45;&gt;check_answers -->
+<g id="edge16" class="edge">
+<title>record_success-&gt;check_answers</title>
+<path fill="none" stroke="#333333" d="M636.68,-464.98C632.03,-492.47 622.95,-546.22 617.37,-579.25"/>
+<polygon fill="#333333" stroke="#333333" points="615.76,-588.79 612.99,-578.18 616.39,-585.06 617.43,-578.93 617.43,-578.93 617.43,-578.93 616.39,-585.06 621.86,-579.68 615.76,-588.79"/>
+<text xml:space="preserve" text-anchor="middle" x="641.29" y="-531.2" font-family="Times,serif" font-size="14.00">Next</text>
+</g>
+<!-- decide_return -->
+<g id="node19" class="node">
+<title>decide_return</title>
+<path fill="#fef3c7" stroke="#333333" d="M627.73,-350.97C627.73,-350.97 520.51,-336.23 520.51,-336.23 514.57,-335.42 514.57,-333.78 520.51,-332.97 520.51,-332.97 627.73,-318.23 627.73,-318.23 633.67,-317.42 645.56,-317.42 651.5,-318.23 651.5,-318.23 758.72,-332.97 758.72,-332.97 764.66,-333.78 764.66,-335.42 758.72,-336.23 758.72,-336.23 651.5,-350.97 651.5,-350.97 645.56,-351.78 633.67,-351.78 627.73,-350.97"/>
+<text xml:space="preserve" text-anchor="middle" x="639.62" y="-330.4" font-family="Helvetica,sans-Serif" font-size="14.00">Return to practice?</text>
+</g>
+<!-- record_success&#45;&gt;decide_return -->
+<g id="edge15" class="edge">
+<title>record_success-&gt;decide_return</title>
+<path fill="none" stroke="#333333" d="M639.62,-428.41C639.62,-411.24 639.62,-384.53 639.62,-364.17"/>
+<polygon fill="#333333" stroke="#333333" points="639.62,-354.25 644.12,-364.25 639.62,-358.03 639.62,-364.25 639.62,-364.25 639.62,-364.25 639.62,-358.03 635.12,-364.25 639.62,-354.25"/>
+<text xml:space="preserve" text-anchor="middle" x="654.78" y="-398" font-family="Times,serif" font-size="14.00">Done</text>
+</g>
+<!-- retry_marked -->
+<g id="node13" class="node">
+<title>retry_marked</title>
+<path fill="#ffffff" stroke="#333333" d="M445.36,-355.4C445.36,-355.4 307.87,-355.4 307.87,-355.4 301.87,-355.4 295.87,-349.4 295.87,-343.4 295.87,-343.4 295.87,-325.8 295.87,-325.8 295.87,-319.8 301.87,-313.8 307.87,-313.8 307.87,-313.8 445.36,-313.8 445.36,-313.8 451.36,-313.8 457.36,-319.8 457.36,-325.8 457.36,-325.8 457.36,-343.4 457.36,-343.4 457.36,-349.4 451.36,-355.4 445.36,-355.4"/>
+<text xml:space="preserve" text-anchor="middle" x="376.62" y="-338.8" font-family="Helvetica,sans-Serif" font-size="14.00">Retry marked problems</text>
+<text xml:space="preserve" text-anchor="middle" x="376.62" y="-322" font-family="Helvetica,sans-Serif" font-size="14.00">(No time limit)</text>
+</g>
+<!-- add_to_marked&#45;&gt;retry_marked -->
+<g id="edge14" class="edge">
+<title>add_to_marked-&gt;retry_marked</title>
+<path fill="none" stroke="#333333" d="M456.77,-428.41C441.89,-411.18 418.71,-384.34 401.1,-363.95"/>
+<polygon fill="#333333" stroke="#333333" points="394.73,-356.57 404.67,-361.2 397.2,-359.43 401.26,-364.14 401.26,-364.14 401.26,-364.14 397.2,-359.43 397.86,-367.08 394.73,-356.57"/>
+</g>
+<!-- decision_still_stuck -->
+<g id="node14" class="node">
+<title>decision_still_stuck</title>
+<path fill="#fef3c7" stroke="#333333" d="M365.32,-256.94C365.32,-256.94 272.31,-223.46 272.31,-223.46 266.66,-221.43 266.66,-217.37 272.31,-215.34 272.31,-215.34 365.32,-181.86 365.32,-181.86 370.97,-179.83 382.26,-179.83 387.91,-181.86 387.91,-181.86 480.92,-215.34 480.92,-215.34 486.57,-217.37 486.57,-221.43 480.92,-223.46 480.92,-223.46 387.91,-256.94 387.91,-256.94 382.26,-258.97 370.97,-258.97 365.32,-256.94"/>
+<text xml:space="preserve" text-anchor="middle" x="376.62" y="-223.6" font-family="Helvetica,sans-Serif" font-size="14.00">Still stuck /</text>
+<text xml:space="preserve" text-anchor="middle" x="376.62" y="-206.8" font-family="Helvetica,sans-Serif" font-size="14.00">Missing prereq?</text>
+</g>
+<!-- retry_marked&#45;&gt;decision_still_stuck -->
+<g id="edge17" class="edge">
+<title>retry_marked-&gt;decision_still_stuck</title>
+<path fill="none" stroke="#333333" d="M376.62,-313.36C376.62,-301.81 376.62,-286.75 376.62,-272.12"/>
+<polygon fill="#333333" stroke="#333333" points="376.62,-262.31 381.12,-272.31 376.62,-266.09 376.62,-272.31 376.62,-272.31 376.62,-272.31 376.62,-266.09 372.12,-272.31 376.62,-262.31"/>
+</g>
+<!-- note_ambiguous -->
+<g id="node15" class="node">
+<title>note_ambiguous</title>
+<polygon fill="#fff7ed" stroke="#333333" points="463.83,-125 283.41,-125 283.41,-89 469.83,-89 469.83,-119 463.83,-125"/>
+<polyline fill="none" stroke="#333333" points="463.83,-125 463.83,-119"/>
+<polyline fill="none" stroke="#333333" points="469.83,-119 463.83,-119"/>
+<text xml:space="preserve" text-anchor="middle" x="376.62" y="-102.8" font-family="Helvetica,sans-Serif" font-size="14.00">Ambiguous → keep marked</text>
+</g>
+<!-- decision_still_stuck&#45;&gt;note_ambiguous -->
+<g id="edge21" class="edge">
+<title>decision_still_stuck-&gt;note_ambiguous</title>
+<path fill="none" stroke="#333333" d="M376.62,-177.29C376.62,-163.73 376.62,-148.94 376.62,-136.53"/>
+<polygon fill="#333333" stroke="#333333" points="376.62,-126.69 381.12,-136.69 376.62,-130.47 376.62,-136.69 376.62,-136.69 376.62,-136.69 376.62,-130.47 372.12,-136.69 376.62,-126.69"/>
+<text xml:space="preserve" text-anchor="middle" x="409.28" y="-147.2" font-family="Times,serif" font-size="14.00">Ambiguous</text>
+</g>
+<!-- learning_session -->
+<g id="node16" class="node">
+<title>learning_session</title>
+<path fill="#ffffff" stroke="#333333" d="M208.54,-240.2C208.54,-240.2 68.7,-240.2 68.7,-240.2 62.7,-240.2 56.7,-234.2 56.7,-228.2 56.7,-228.2 56.7,-210.6 56.7,-210.6 56.7,-204.6 62.7,-198.6 68.7,-198.6 68.7,-198.6 208.54,-198.6 208.54,-198.6 214.54,-198.6 220.54,-204.6 220.54,-210.6 220.54,-210.6 220.54,-228.2 220.54,-228.2 220.54,-234.2 214.54,-240.2 208.54,-240.2"/>
+<text xml:space="preserve" text-anchor="middle" x="138.62" y="-223.6" font-family="Helvetica,sans-Serif" font-size="14.00">Learning session:</text>
+<text xml:space="preserve" text-anchor="middle" x="138.62" y="-206.8" font-family="Helvetica,sans-Serif" font-size="14.00">Derive / test / document</text>
+</g>
+<!-- decision_still_stuck&#45;&gt;learning_session -->
+<g id="edge19" class="edge">
+<title>decision_still_stuck-&gt;learning_session</title>
+<path fill="none" stroke="#333333" d="M259.93,-219.4C250.54,-219.4 241.14,-219.4 231.95,-219.4"/>
+<polygon fill="#333333" stroke="#333333" points="222.07,-219.4 232.07,-214.9 225.85,-219.4 232.07,-219.4 232.07,-219.4 232.07,-219.4 225.85,-219.4 232.07,-223.9 222.07,-219.4"/>
+<text xml:space="preserve" text-anchor="middle" x="240.78" y="-226.6" font-family="Times,serif" font-size="14.00">Yes</text>
+</g>
+<!-- extract_strategies -->
+<g id="node17" class="node">
+<title>extract_strategies</title>
+<path fill="#ffffff" stroke="#333333" d="M224.47,-125C224.47,-125 52.76,-125 52.76,-125 46.76,-125 40.76,-119 40.76,-113 40.76,-113 40.76,-101 40.76,-101 40.76,-95 46.76,-89 52.76,-89 52.76,-89 224.47,-89 224.47,-89 230.47,-89 236.47,-95 236.47,-101 236.47,-101 236.47,-113 236.47,-113 236.47,-119 230.47,-125 224.47,-125"/>
+<text xml:space="preserve" text-anchor="middle" x="138.62" y="-102.8" font-family="Helvetica,sans-Serif" font-size="14.00">Extract CS / HS / ADK / HDK</text>
+</g>
+<!-- decision_still_stuck&#45;&gt;extract_strategies -->
+<g id="edge20" class="edge">
+<title>decision_still_stuck-&gt;extract_strategies</title>
+<path fill="none" stroke="#333333" d="M326.72,-195.26C285.26,-176.02 226.66,-148.84 185.92,-129.94"/>
+<polygon fill="#333333" stroke="#333333" points="177.08,-125.84 188.04,-125.97 180.51,-127.43 186.15,-130.05 186.15,-130.05 186.15,-130.05 180.51,-127.43 184.26,-134.13 177.08,-125.84"/>
+<text xml:space="preserve" text-anchor="middle" x="251.92" y="-147.2" font-family="Times,serif" font-size="14.00">No</text>
+</g>
+<!-- learning_session&#45;&gt;extract_strategies -->
+<g id="edge22" class="edge">
+<title>learning_session-&gt;extract_strategies</title>
+<path fill="none" stroke="#333333" d="M138.62,-198.15C138.62,-180.83 138.62,-155.71 138.62,-136.38"/>
+<polygon fill="#333333" stroke="#333333" points="138.62,-126.44 143.12,-136.44 138.62,-130.22 138.62,-136.44 138.62,-136.44 138.62,-136.44 138.62,-130.22 134.12,-136.44 138.62,-126.44"/>
+</g>
+<!-- update_notes -->
+<g id="node18" class="node">
+<title>update_notes</title>
+<path fill="#ffffff" stroke="#333333" d="M218.28,-52C218.28,-52 58.95,-52 58.95,-52 52.95,-52 46.95,-46 46.95,-40 46.95,-40 46.95,-28 46.95,-28 46.95,-22 52.95,-16 58.95,-16 58.95,-16 218.28,-16 218.28,-16 224.28,-16 230.28,-22 230.28,-28 230.28,-28 230.28,-40 230.28,-40 230.28,-46 224.28,-52 218.28,-52"/>
+<text xml:space="preserve" text-anchor="middle" x="138.62" y="-29.8" font-family="Helvetica,sans-Serif" font-size="14.00">Update notes / strategy log</text>
+</g>
+<!-- extract_strategies&#45;&gt;update_notes -->
+<g id="edge23" class="edge">
+<title>extract_strategies-&gt;update_notes</title>
+<path fill="none" stroke="#333333" d="M138.62,-88.81C138.62,-81.14 138.62,-71.89 138.62,-63.24"/>
+<polygon fill="#333333" stroke="#333333" points="138.62,-53.25 143.12,-63.25 138.62,-57.03 138.62,-63.25 138.62,-63.25 138.62,-63.25 138.62,-57.03 134.12,-63.25 138.62,-53.25"/>
+</g>
+<!-- update_notes&#45;&gt;retry_marked -->
+<g id="edge24" class="edge">
+<title>update_notes-&gt;retry_marked</title>
+<path fill="none" stroke="#333333" d="M66.3,-52.47C52.59,-59.14 39.96,-68.33 31.62,-81 -14.9,-151.63 -9.75,-208.47 47.62,-270.6 79.03,-304.63 198.7,-320.7 284.65,-327.99"/>
+<polygon fill="#333333" stroke="#333333" points="294.53,-328.8 284.2,-332.47 290.77,-328.49 284.57,-327.98 284.57,-327.98 284.57,-327.98 290.77,-328.49 284.93,-323.5 294.53,-328.8"/>
+</g>
+<!-- update_notes&#45;&gt;decide_return -->
+<g id="edge18" class="edge">
+<title>update_notes-&gt;decide_return</title>
+<path fill="none" stroke="#333333" d="M230.72,-36.8C324.48,-40.32 461.94,-50.68 504.62,-81 581.29,-135.48 552,-188.91 598.62,-270.6 605.99,-283.53 614.94,-297.44 622.58,-308.9"/>
+<polygon fill="#333333" stroke="#333333" points="627.96,-316.86 618.63,-311.09 625.84,-313.72 622.36,-308.57 622.36,-308.57 622.36,-308.57 625.84,-313.72 626.09,-306.05 627.96,-316.86"/>
+<text xml:space="preserve" text-anchor="middle" x="576.1" y="-147.2" font-family="Times,serif" font-size="14.00">Done</text>
+</g>
+<!-- decide_return&#45;&gt;start -->
+<g id="edge25" class="edge">
+<title>decide_return-&gt;start</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M655.8,-318.33C674.57,-300.63 705.92,-271.05 729.27,-249.03"/>
+<polygon fill="#333333" stroke="#333333" points="736.27,-242.42 732.09,-252.56 733.52,-245.02 729,-249.28 729,-249.28 729,-249.28 733.52,-245.02 725.91,-246.01 736.27,-242.42"/>
+<text xml:space="preserve" text-anchor="middle" x="732.36" y="-283.2" font-family="Times,serif" font-size="14.00">Restart cycle</text>
+</g>
+<!-- decide_return&#45;&gt;end -->
+<g id="edge26" class="edge">
+<title>decide_return-&gt;end</title>
+<path fill="none" stroke="#333333" stroke-dasharray="5,2" d="M639.62,-316.41C639.62,-302.27 639.62,-281.62 639.62,-263.09"/>
+<polygon fill="#333333" stroke="#333333" points="639.62,-253.13 644.12,-263.13 639.62,-256.91 639.62,-263.13 639.62,-263.13 639.62,-263.13 639.62,-256.91 635.12,-263.13 639.62,-253.13"/>
+<text xml:space="preserve" text-anchor="middle" x="652.45" y="-283.2" font-family="Times,serif" font-size="14.00">Stop</text>
+</g>
+</g>
+</svg>

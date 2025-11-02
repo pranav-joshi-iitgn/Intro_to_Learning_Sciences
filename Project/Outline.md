@@ -1,0 +1,6 @@
+- Learning Goals
+- Learning Design and Features (must include assessment and community rules)
+- Learning Theories and Pedagogical Models
+- Assessment of pedagogical models (appropriation)
+- Evaluation of Learning Design
+- Redesign Features 
