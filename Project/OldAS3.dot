@@ -9,19 +9,20 @@ digraph CourseDesign {
     jit_concept [label="Just-in-Time\nConcept\nIntroduction" style=filled fillcolor=lightgreen];
     worked_examples [label="Worked Examples\nand Demonstration" style=filled fillcolor=lightgreen];
   
-    community_exemplars [label="Past PLs" style=filled fillcolor=cyan];
+    // community_exemplars [label="Past PLs" style=filled fillcolor=cyan];
     
+    // prog_assignments [label="Programming\nAssignments" style=filled fillcolor=purple fontcolor=white];
     sequential_pipeline [label="Project\nTime-line" style=filled fillcolor=lightyellow];
     knowledge [label="Knowledge" style=filled fillcolor=lightpink];
     iterative_cycles [label="Iterative\nCycles" style=filled fillcolor=lightyellow];
-    fair_distribution [label="Mark-Split" style=filled fillcolor=orangered fontcolor=white];
+    // fair_distribution [label="Mark-Split" style=filled fillcolor=orangered fontcolor=white];
     social_accountability [label="Respect and\nBelonging" style=filled fillcolor=lightyellow];
     peer_learning [label="Group\nLearning" style=filled fillcolor=lightyellow];
     Product [label="Final\nCompiler" style=filled fillcolor=orange];
 
     
-    slides_notes [label="Slides, Notes, Code" style=filled fillcolor=cyan];
-    examinations [label="Examinations" style=filled fillcolor=brown fontcolor=white];
+    // slides_notes [label="Slides, Notes, Code" style=filled fillcolor=cyan];
+    // examinations [label="Examinations" style=filled fillcolor=brown fontcolor=white];
     
     Grade [label="Grade" style=filled fillcolor = black fontcolor=white]
 
@@ -39,63 +40,43 @@ digraph CourseDesign {
   jit_concept -> sequential_pipeline;
   jit_concept -> knowledge;
   doubt_resolution -> knowledge;
-  Doubt -> knowledge [dir=back];
-  
+  knowledge -> Doubt;
   worked_examples -> knowledge;
   
+//   sequential_pipeline -> prog_assignments;
   sequential_pipeline -> iterative_cycles;
+//   prog_assignments -> knowledge;
   knowledge -> iterative_cycles [arrowhead=normal];
   iterative_cycles -> knowledge [arrowhead=normal];
-  iterative_cycles -> social_accountability;
-  social_accountability -> iterative_cycles;
+  peer_learning -> iterative_cycles -> social_accountability;
+  social_accountability -> iterative_cycles -> peer_learning;
   social_accountability -> peer_learning;
   peer_learning -> social_accountability;
-  social_accountability -> fair_distribution;
+//   social_accountability -> fair_distribution;
   
-  community_exemplars -> sequential_pipeline;
-  community_exemplars -> worked_examples;
-  slides_notes -> lectures;
-  slides_notes -> worked_examples;
-  knowledge -> examinations;
+//   community_exemplars -> sequential_pipeline;
+//   community_exemplars -> worked_examples;
+//   slides_notes -> lectures;
+//   slides_notes -> worked_examples;
+//   knowledge -> examinations;
   
     sequential_pipeline -> lab_monitoring;
     lab_feedback -> iterative_cycles;
+    // knowledge -> prog_assignments;
 
 
-  iterative_cycles -> Product;
-  fair_distribution -> Grade;
-  examinations -> Grade;
+  iterative_cycles -> Product -> Grade;
+//   fair_distribution -> Grade;
+//   examinations -> Grade;
+//   prog_assignments -> Grade;
+//   prog_assignments -> lab_monitoring;
 
-    Doubt -> iterative_cycles [dir=back];
+    iterative_cycles -> Doubt;
+    // Doubt -> prog_assignments [dir=back];
     doubt_resolution -> Doubt [dir=back];
 
-    {rank=min; community_exemplars, slides_notes};
-
-    individual_impl [label="Individual\nImplementation" style=filled fillcolor=lightyellow];
-    individual_explain [label="Individual\nExplanation" style=filled fillcolor=lightyellow];
-    peer_explain [label="Peer\nExplanation" style=filled fillcolor=lightyellow];
-    design_choices [label="Design\nChoices" style=filled fillcolor=lightyellow];
-
-    // Internal sub-activity flow
-    individual_explain -> individual_impl [dir=back];
-    individual_impl -> iterative_cycles -> individual_impl;
-    individual_explain -> design_choices;
-    iterative_cycles -> design_choices;
-    
-    // Connections to external components
-    sequential_pipeline -> design_choices -> individual_impl;
-    lab_monitoring -> individual_explain [dir=back];
-    lab_feedback -> design_choices;
-    lab_monitoring -> peer_explain [dir=back];
-    lab_feedback -> knowledge;
-    individual_impl -> Doubt;
-    iterative_cycles -> peer_explain;
-    peer_explain -> Doubt;
-    peer_explain -> peer_learning;
-    Doubt -> jit_concept;
-    Product -> Grade;
-    peer_explain -> Grade;
-    individual_impl -> Grade;
-    Doubt -> peer_learning;
+    // {rank=min; community_exemplars, slides_notes};
+    // {rank=same; iterative_cycles, prog_assignments};
+    {rank=same; peer_learning, social_accountability};
 
 }
