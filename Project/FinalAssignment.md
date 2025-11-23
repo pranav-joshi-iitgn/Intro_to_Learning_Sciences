@@ -23,21 +23,19 @@ Programming languages (PL) such as Python, C, Java, etc. are high-level language
 
 ![AlgoLang: My custom HLL](Inter.png){height=200px}
 
-Code written in an HLL is either interpreted and executed immediately (as with JavaScript) or is converted to a lower-level language consisting of instructions called bytecode (for example, Python bytecode written in `.pyc` files). 
+Code written in an HLL is either interpreted and executed immediately or is converted to a lower-level language consisting of instructions called bytecode. Optionally, it might be first converted to assembly code (e.g. MIPS) and then assembled into bytecode.
 
 ![AST: Intermediate representation in interpreter](AST.png){height=200px}
-
-The bytecode is either executed by a virtual machine (VM) or by a real device, in which case it is called machine code, written according to the Instruction Set Architecture (for example, MIPS32) that the device uses.
 
 ![MIPS32 assembly code](MIPS.png){height=200px}
 
 ![Bytecode (binary)](bytecode_bin.png){height=200px}
 
-A compiler is a stand-alone program, usually written in machine code, that converts code written in an HLL into bytecode. An interpreter is also a stand-alone program that converts and executes code in an HLL without conversion to bytecode. A virtual machine is another stand-alone program which executes a low-level language rather than an HLL.
+A compiler is a program that converts code written in an HLL into bytecode. An interpreter is a program that executes HLL code without conversion to bytecode. A virtual machine executes the bytecode.
 
 ![VM execution](VM.png){height=100px}
 
-Learning how to create interpreters and eventually compilers for programming languages allows programmers to create their own custom languages. While the set of possible PLs that can be interpreted is very large, the PLs that can be "sanely" compiled are only a subset of this space, and the PLs that can be used for general-purpose tasks and provide intuitive and necessary features are even smaller. Thus, PL design is an important task, and the theories used to design "good" PLs are collectively known as PL theory.
+Learning to create interpreters and compilers for PLs allows crafting custom PLs. While the set of possible PLs that can be interpreted is very large, the set of PLs that can be "sanely" compiled and can be used for general-purpose tasks and provide intuitive and necessary features is much smaller. Thus, PL design is an important task, and the theories used to design "good" PLs are collectively known as PL theory.
 
 ### Course Context
 
@@ -45,9 +43,9 @@ This course, CS 327, is a CSE elective that falls into the computer systems bask
 
 ### Professor's goals
 
-> My primary motivation is to convey the beauty of the subject, get students interested, and then getting them to work on a large-ish codebase. This would be common to many of the systems courses if I teach them: compilers, os, networks... Problems that pop-up when developing in the large (with multiple people, spanning non-trivial time period) can only be really understood while writing large programs yourself. I think in Computing, DSAx, ... there are no opportunities to do this. Main technical objectives are teaching lexing + parsing (a task that pops up almost everywhere in programming) and to expose students to the some aspects of engineering with language design as a medium (types, mutability, first-class vs second-class). I think understanding these issues are important to really understand correctness and efficiency barriers and can form a technical basis for many choices. For example, a language with first-class functions lose a lot of optimization opportunities but gain a lot of abstraction opportunities leading to better correctness. Such tradeoffs are common in engineering. And, compilers sort of give a well-understood case of tradeoffs.
+> My primary motivation is to convey the beauty of the subject, get students interested, and then getting them to work on a large-ish codebase. This would be common to many of the systems courses if I teach them: compilers, os, networks, etc.. Problems that pop-up when developing in the large (with multiple people, spanning non-trivial time period) can only be really understood while writing large programs yourself. I think in Computing, DSAx, etc., there are no opportunities to do this. Main technical objectives are teaching lexing + parsing (a task that pops up almost everywhere in programming) and to expose students to some aspects of engineering with language design as a medium (types, mutability, first-class vs second-class).
 
-From this, some goals that can be identified are:
+From this, some goals can be identified:
 
 - Convey the beauty of the subject and Get students interested : intrinsic motivation
 - working with large codebases, exposure to tradeoffs in engineering, and skills (lexing,parsing) that "pop up everywhere" : competence in _real life contexts_ (effective transfer)
@@ -63,7 +61,7 @@ While the goals articulated by the professor shed light on some domain knowledge
 - Practical ability to write code for interpreters and compilers in a HLL
 - Ability to work with large code-bases
 
-### Control Strategies and Meta-Cognitive Skills:
+### Control Strategies (soft skills):
 
 - Teamwork and efficient distribution of work to accelerate product development
 - Time management (over long time-frames)
@@ -71,17 +69,16 @@ While the goals articulated by the professor shed light on some domain knowledge
 
 ### Students' Goals
 
-In discussions with peers, I discovered diverse motivations for taking the course, each representing different entry points into the domain. Here I list a few:
+In discussions with peers, I discovered diverse motivations for taking the course. Here I list a few:
 
 - Industry relevance: Compilers and computer systems skills are in-demand in the software development market.
-- Career incentives: Some classmates had secured internships at companies like Qualcomm with roles centered on compiler work.
+- Career incentives: Some classmates had secured internships at companies like Qualcomm with roles centered around compilers.
 - Research interest: One teammate was conducting research in PL theory; this course was a natural continuation.
 - Challenge and growth: Some students (including myself) had heard the course was challenging and saw taking it as central to becoming a strong computer engineer.
-- Theory into practice: A classmate with strong theoretical CS background wanted to see her knowledge of computation theory applied in practice.
 
 ### Overarching Career-Oriented Goal:
 
-For a course on compilers in an institute where the majority of students pursue industry careers, a primary goal should be enabling students to not only understand compiler concepts but to actually take on compiler-related tasks in their future careers and possess the genuine competence needed to finish them successfully. To accomplish this, students must develop two prerequisites for engagement: a genuine sense of competence and authentic interest in the domain; not merely achievement of pass-marks. The same is visible in the professor's goals.
+Given the goals of the students, a primary goal should be enabling students to actually take on compiler-related tasks in their future careers and possess the genuine competence needed to finish them successfully. To accomplish the former, students need a sense of competence (confidence) and authentic interest in the domain. The same is visible in the professor's goals.
 
 Thus, the core metrics that the students should improve on are:
 
@@ -95,49 +92,36 @@ Thus, the core metrics that the students should improve on are:
 
 ### Structuring Through Sequential Implementation Pipeline
 
+The course imposed a logical sequence on project work.
+
 ![Compiler Project stages](stages.png){height=200px}
 
-The course imposed a logical sequence on project work, designed to mirror the conceptual dependencies within compiler design itself:
-
-1. Basic language design and parser design
-2. Interpreter implementation
-3. Iterative improvement of both design and interpreter (allowing mastery of interpreter writing before moving to code generation)
-4. Bytecode generation
-5. VM implementation (forming an iterative cycle since bytecode design is tightly coupled with VM implementation)
-
-This structure prevented chaotic, simultaneous attempts at multiple implementation strategies. Instead, students focused intensively on one stage at a time, building competence sequentially rather than being overwhelmed by the full scope simultaneously.
+This structure prevented chaotic, simultaneous attempts at multiple implementation strategies. Instead, students focused on one stage at a time, building competence sequentially.
 
 \newpage
 
 ### Assessment Weightage and Incentive Structure
 
-The grading scheme heavily emphasized practical work over theoretical testing. Examinations received only 20% of the final grade, programming assignments received 30%, and the course project received the remainder (50%). This weightage fundamentally shaped student effort allocation and signaled that practical competence and artifact creation were more valued than theoretical knowledge retention alone.
+The grading scheme heavily emphasized practical work over theoretical testing. Examinations received only 20% of the final grade, programming assignments received 30%, and the course project received the remainder (50%), fundamentally shaping student effort allocation.
 The group project allowed for group learning, bricolage, and style development but by itself, didn't facilitate doubt resolution.
 
-![Project](OldAS1.png){height=300px}
-
-\newpage
+![Group Project](OldAS1.png){height=300px}
 
 ### Learning Through Peer Examination
 
 Student teams examined each other's PL designs and compiler approaches, using insights from peers to refine their own work. This created a some-what active community of practice where students were both learners and resources for one another.
 
-### Lecture Structure and Opportunistic Knowledge Introduction
+\newpage
 
-Every week, students attended 2 lectures and 1 lab session. The lectures served both as doubt-resolution sessions where ongoing compiler work was discussed, and for introducing new concepts precisely when they became useful to students' current work. For example, the cactus-stack data structure used for implementing function closures, was taught only after students had already begun implementing functions in their projects. This just-in-time scaffolding prevented cognitive overload while maintaining authentic need for the knowledge being taught. There was no grading based on lecture attendance; students were only expected to stay current with concepts introduced during lectures.
+### Lecture Structure
 
-All course materials such as slides, notes, code, and relevant links were written on a page in a GitHub repository.
-At the top of the page, the professor explicitly stated:
-
-> There is no textbook. Follow the lectures. Code a lot. Read necessary theory.
+The lectures served both as doubt-resolution sessions where ongoing compiler work was discussed, and for introducing new concepts when they became useful to students' current work. For example, the cactus-stack data structure used for implementing function closures, was taught only after students had already begun implementing functions in their projects. This just-in-time scaffolding prevented cognitive overload while maintaining authentic need for the knowledge being taught. There was no grading based on lecture attendance; students were only expected to stay current with concepts introduced during lectures.
 
 ![Projects and Lectures](OldAS2.png){height=300px}
 
 \newpage
 
 ### One-on-One Monitoring and Adaptive Feedback Through Lab Sessions
-
-This level of precision in JIT instruction during lectures was possible because the students' progress was monitored by the teaching assistants in the labs.
 
 Lab sessions featured one-on-one discussions between students and TAs. These sessions were explicitly framed as monitoring scaffolds; forums for providing personalized guidance and feedback rather than for grading performance. This qualitative monitoring allowed the professor to provide adaptive feedback based on the teams' progress and challenges, similar to scrum meetings in industry or research lab sessions.
 
@@ -151,7 +135,7 @@ Evaluation through the project suffers through plagiarism and excess reliance on
 
 ### Fair Mark Distribution and Social Accountability
 
-The course implemented an innovative solution to the negative episodes (related to the practice of teamwork) caused due to the "freeloader problem" common in group projects: rather than assigning identical marks to all team members, the total marks for the project were given to the team, and team members negotiated and justified the distribution of marks to the professor. Critically, this rule was announced only at the end of the semester; had it been explicit from the start, it would have created unhealthy competition and discouraged team formation.  
+The course implemented a solution to the negative episodes (related to the practice of teamwork) caused due to the "freeloader problem" during evaluation, common in group projects: rather than assigning identical marks to all team members, the total marks for the project were given to the team, and team members negotiated and justified the distribution of marks to the professor. Critically, this rule was announced only at the end of the semester; had it been explicit from the start, it would have created unhealthy competition and discouraged team formation.  
 
 ![Examination and Mark-split](OldAS4.png){height=300px}
 
@@ -167,9 +151,14 @@ While the project allows for deep internalisation and appreciation of a few usef
 
 ### Other resources serving as worked examples
 
-On the first day of the semester, students were shown the PL designs built by teams in the previous year, providing concrete models of what successful final products could look like. The same were available on the GitHub repository to review later.
+All course materials such as slides, notes, code, and relevant links were written on a page in a GitHub repository.
+At the top of the page, the professor explicitly stated:
 
-The code and pseudocode on the GitHub repository served as worked examples along with demonstrations done during lectures. However, we were not "spoon-fed"; we still had to modify and adapt these examples to solve our specific project problems. This avoids a lot of confusion and anxiety that the student might experience if unguided.
+> There is no textbook. Follow the lectures. Code a lot. Read necessary theory.
+
+On the first day of the course, students were shown the PL designs built by teams in the previous year, providing concrete models of what successful final products could look like.
+
+The code and pseudocode on the GitHub repository served as worked examples along with demonstrations done during lectures. This avoided a lot of confusion and anxiety that the student might have experienced if unguided.
 
 ![Final Design](OldAS.png){height=400px}
 
@@ -177,17 +166,17 @@ The code and pseudocode on the GitHub repository served as worked examples along
 
 ## Learning Theories or Pedagogical Models Used
 
-### Constructionism: Learning Through Artifact Creation
+### Constructionism
 
-Constructionism, developed by Seymour Papert, posits that learning occurs most powerfully when learners design, build, and refine tangible, meaningful artifacts in the world. 
+Constructionism posits that learning occurs most powerfully when learners design, build, and refine tangible, meaningful artifacts in the world. 
 
 Evidence of constructionist learning can be seen from the course outcomes: by the end of the semester, I had learned nearly every concept required for the final written exam while referring to no written sources and attending only about half the lectures. The learning happened primarily through the project and assignments, not through instruction.
 
 Learning followed a bricolage model, characteristic of authentic programming work. I would design or implement a feature, observe the restrictions and benefits that the feature provided after implementation, and based on that observation, either add another feature or improve the existing implementation.
 
-### Cognitive Apprenticeship: Guided Development of Complex Skills
+### Cognitive Apprenticeship
 
-Cognitive apprenticeship, articulated by Collins, Brown, and Newman, describes how learners acquire complex skills through observation, guided practice, and progressively increased responsibility within an authentic domain. The compilers course exhibits these components of cognitive apprenticeship:
+Cognitive apprenticeship, articulated by Collins, Brown, and Newman, describes how learners acquire complex skills through observation, guided practice, and progressively increased responsibility within an authentic domain. The course exhibits these components of cognitive apprenticeship:
 
 - Global Before Local (Modeling at Scale) : On the first day, students were shown complete PL implementations from previous years.
 - Modeling Through Worked Examples : Code and pseudocode for basic tasks
@@ -196,23 +185,29 @@ Cognitive apprenticeship, articulated by Collins, Brown, and Newman, describes h
   - Structuring via the implementation pipeline (basic design, interpreter, bytecode, VM cycle)
 - Articulation Through Lab Sessions
 
-### Cultural Learning Pathways: Identity, Belonging, and Long-Term Trajectories
+### Cultural Learning Pathways
 
 Beyond immediate course knowledge, both constructionist and apprenticeship approaches operate within the broader framework of cultural learning pathways. This perspective views the course not as an isolated event but as an episode within each student's trajectory toward becoming a competent compiler engineer or systems programmer.
 
 The course design respects and cultivates these diverse entry points. By producing genuine competence and belonging, not just grades, it creates positive episodes that shape long-term trajectories. My own experience illustrates this: the course's success led me to ideate a new independent project (creating a parser for Oracle SQL).
 
+### Collaborative Learning
+
+This view sees collaboration as not just cooperation (divison of labour) but a to-and-fro between the participants; leading to conflict, grounding (creation of a common ground), negotiation of views and ultimately internalisation of knowledge.
+
+By having the project be done in groups, the course tries to employ "collaboration" as a mechanism for learning. 
+
 \newpage
 
-## Assessment of Learning Theory or Pedagogical Model Appropriateness
+## Assessment of Learning Theory or Pedagogical Model
 
 The theories employed in the design of this course have these benefits :
 
 1. Constructionism supports development of style and a sense of ownership which leads to **idenity formation**.
 2. Cognitive apprenticeship supports both **domain knowledge** and **meta-cognitive skills** through scaffolded, guided practice leading to practical competency **without overwhelming** the students as Sweller warns against.
-3. The course creating a positive episode moves the students upwards in the cutural learning path by giving them a **sense of competence**. This "good episode" occurs mainly because of the constructionist approach which is known to be "fun" and often leaves the creator proud of his creation.
+3. The course creates a positive episode moves the students upwards in the cutural learning path by giving them a **sense of competence**. This "good episode" occurs mainly because of the constructionist approach which is known to be "fun" and often leaves the creator proud of his creation.
 
-On the other hand, a comparative analysis of alternative pedagogical paradigms reveals that while many excel in some dimensions, only the combination of constructionism and cognitive apprenticeship produces all three critical outcomes for the over-arching career-oriented goals simultaneously (competence, sense of competence, and idenity formation) :
+A comparative analysis of alternative pedagogical paradigms reveals that while many excel in some dimensions, only the combination of constructionism and cognitive apprenticeship produces all three critical outcomes for the over-arching career-oriented goals simultaneously (competence, sense of competence, and idenity formation) :
 
 - Behaviorism and traditional instructionism produce procedural competence but lack motivation and ownership. Students can execute procedures but don't develop identity or genuine interest.
 - Cognitivism based instructionism supports mental model development but can remain abstract and disconnected from authentic practice, limiting transfer and motivation.
@@ -220,6 +215,9 @@ On the other hand, a comparative analysis of alternative pedagogical paradigms r
 - Problem-based learning engages students but often involves episodic problems rather than sustained artifact development, limiting the sense of ownership and long-term trajectory effects that come from building something persistent.
 - Situated learning can overwhelm students with authentic complexity before they have sufficient schemas as Sweller warns about.
 - Cognitive apprenticeship alone, while effective for competence development, doesn't necessarily produce the sense of ownership and identity from having built something personally meaningful.
+
+As for collaborative learning, although there was grouping, it didn't necessarily lead to collaboration between _all_ team-members, as was the case of my team. Even through I was lucky and reaped the benefits of timely guidance from a PL theory expert in the team, this is most likely a rare scenario. Thus the course failed to correctly apply the principles in collaborative learning. This is discussed in detail in the "design gaps" subsection.
+Moreover, the reason for have the project be done in groups and the specific group size is unclear. It doesn't lead to any significant advantages in my opinion.
 
 \newpage
 
@@ -229,32 +227,28 @@ On the other hand, a comparative analysis of alternative pedagogical paradigms r
 
 #### Industry-level knowledge without abstraction overload:
 
-Before taking this course, I had already studied basic compiler theory. But during the course, I found little use for most of that theoretical knowledge. The course operates on the implementable subset of PL and compiler theory, not the abstract formalism. This prevents cognitive overload from unnecessary theory. In contrast, the traditional format introduces full compiler theory, which many students find overwhelming and abstract.
+The course operates on the implementable subset of PL and compiler theory, not the abstract formalism. This prevents cognitive overload from unnecessary theory. In contrast, the traditional format introduces full compiler theory, which many students find overwhelming and abstract.
 
 #### Meaningfulness of knowledge throughout the learning process:
 
-In this course, knowledge was learned because it was needed to solve authentic problems. I was able to learn nearly every concept required for the final exam purely through working on the project under guidance of the professor, TAs, and peers. As a result, I never felt the need to ask "why am I learning this?". It never felt like study. 
+In this course, knowledge was learned because it was needed to solve authentic problems. I was able to learn nearly every concept required for the final exam purely through working on the project under guidance of the professor, TAs, and peers. 
 In contrast, students in the traditional lecture-based format often experience knowledge as abstract and disconnected from practice, reducing motivation.
 
-#### Excellent sequencing and scaffolding:
+#### Excellent sequencing and scaffolding and Appropriate complexity:
 
-In many other CS courses, students receive vague project descriptions and must independently navigate literature review, design decisions, and implementation. This often leads to overwhelm, shortcuts, plagiarism, and failure to develop confidence. This course provided careful scaffolding at each stage; students were not dropped into chaos.
+In many other CS courses, students receive vague project descriptions and must independently navigate literature review, design decisions, and implementation, or the projects have too high a complexity at the student's level. This often leads to overwhelm, shortcuts, plagiarism, and failure to develop confidence. This course provided careful scaffolding at each stage and avoids overload.
 
 #### Alignment between assessment practices and domain practices:
 
 Exams, assignments, and projects all relied on the same underlying domain knowledge, with minimal emphasis on exam-specific heuristics or strategies. Success in the project strongly predicted success on the exam, creating intrinsic motivation rather than forcing students to juggle disconnected skill sets.
 
-#### Appropriate cognitive load calibration:
-
-As cognitive load theory (CLT) demonstrates, task difficulty must match learner schemas. Many CS course projects impose heavy cognitive load because students lack necessary prerequisite schemas and receive insufficient guidance. This course calibrated task difficulty appropriately for beginners; we were challenged but not overwhelmed.
-
 #### Meaningful lab sessions:
 
-The term "lab" is often used synonymously with "test", namely sessions where disconnected skills are graded. This course's labs functioned more like industry scrum meetings or research lab sessions: qualitative monitoring of progress for adaptive feedback rather than grading disconnected skills. This alignment between the "exam" practice (activity) and the "lab" practice enhances transfer and reduces load.
+The term "lab" is often used synonymously with "test", namely sessions where disconnected skills are graded. This course's labs functioned more like industry scrum meetings or research lab sessions: qualitative monitoring of progress for adaptive feedback rather than grading disconnected skills.
 
-#### Fair contribution and positive team dynamics:
+#### Fair evaluation of contribution:
 
-The mark-splitting approach solved the free-loader problem while preserving motivation for teamwork. A team-mate who had done minimal work was upset when this rule was announced; I, having done roughly 70% of the work, was satisfied. Moreover my teammates were the ones who suggested I get a bigger fraction, signifying that they respected me. Thus the mark-split method evaluates not just the output of the team, but the individual output and also teamwork, an important soft-skill needed in the actual practice.
+The mark-splitting approach solved the free-loader problem during assessment while preserving motivation for teamwork. A team-mate who had done minimal work was upset when this rule was announced; I, having done roughly 70% of the work, was satisfied. Moreover my teammates were the ones who suggested I get a bigger fraction, signifying that they respected me. Thus the mark-split method evaluates not just the output of the team, but the perceived individual output.
 
 \newpage
 
@@ -262,15 +256,21 @@ The mark-splitting approach solved the free-loader problem while preserving moti
 
 #### Meaningless Programming Assignments:
 
-While the programming assignments introduced students to many different things, they were not directly related to the project (the main component of the course) and sometimes felt meaningless.
+While the programming assignments introduced students to many different things, they were not directly related to the project and sometimes felt meaningless.
 
 #### The Underemployed Worker Problem:
 
-The course exhibited one significant failure mode: the "underemployed worker issue." Students perceived as less competent by their team were not assigned challenging tasks and consequently contributed less, developed lower perceived competence, and potentially suffered negative learning episodes.
+Students perceived as less competent by their team were not assigned challenging tasks and consequently contributed less, developed lower perceived competence, and potentially suffered negative learning episodes. Whereas students who did most of the work were overloaded and resented the ones who couldn't contribute.
 
-This creates a negative feedback loop: initial differences in perceived competence, however small or arbitrary, become reinforced through differential task assignment, preventing less confident students from developing the competence and confidence that the course aimed to provide.
+This problem can be traced back to bad grounding and division of labour by the team at the start. 
 
-The programming assignments partially solve this, but since that isn't the main aim for the assignments, it isn't a proper solution.
+Teamwork is an important skill for the future activity systems that the students might enter and must also be _taught_ or at-least be done by the course itself. This course fails to do both and might cause negative episodes in terms of the "teamwork" practice.
+
+According to the collaborative learning theory, by structuring the assignment of roles, we can avoid vertical division of labour (which leads to assymetry in actions); unequal division of labour leading to higher or lower "status" of the student in the eyes of the team; and the extraneous load that comes from managing team dynamics.
+
+Moreover, since we want collaboration and not mere cooperation, we need frequent shuffling of the roles.
+
+We also need the collaboration component to happen synchronously (preferably face-to-face) so that the team members may be able to see externalisations of each other's schemas (say, while speaking), and not just the end product (a written paragraph or some simple statement with no reasoning visible) like we often see in asynchronous media such as WhatsApp or G-mail. 
 
 #### The Lack of Breadth Problem:
 
@@ -281,35 +281,31 @@ The breadth of material covered was narrower than traditional courses. For examp
 
 ## Redesign Features
 
-### Pairing Old-Timers with Newcomers
+### Group based on forms filled out by students
 
-I was fortunate to have a team-mate who was an "old-timer" in PL theory and provided timely guidance. Many teams were not as fortunate.
+While the multi-voicedness of the team leads to a variety of approaches and conflict, which leads to collaborative learning, it can also cause disagreements. So, have the students fill out a form with questions such as "what programming langauges are you comfortable with", "have you built a parser before", etc. and then let a computer program form groups, or let the students see the responses and decide amongst themselves.
 
-To address this, an explicit system pairing an old-timer with each new-timer could be introduced. The old-timer's role would focus on good PL and compiler design principles rather than detailed coding or menial tasks, allowing the newcomer to receive personalized one-on-one feedback.
+### Mutiple Implementations of Compiler Pipeline Stages
 
-Critically, roles must not be explicitly assigned to preserve newcomer agency and allow respect to be earned naturally.
+Each team-member should implement a different approach or component for each pipeline stage. For example, one member could implement a register-based bytecode and VM while another implements a stack-based VM.
 
-### Distributed Implementation of Compiler Pipeline Stages
+Students can be graded with some weightage for their own implemention and some for the final compiler that the team will present using the mark-split method. This avoids the free-rider problem.
 
-Each new-timer should implement a different approach or component for each pipeline stage. For example, one student could implement a register-based bytecode VM while another implements a stack-based VM.
-Students can be graded with some weightage $A$ for only their own implemented approaches and other weightage $B$ using the mark-split method for the final optimum compiler that the team will present, such that $A+B=C$ where $C$ is the total weightage for the project component (currently 50%). This avoids the free-rider problem.
-
-All team members should explain their own approach and the approaches of other teammates (randomly picked) to the TAs during lab meetings. 
-There can be grading for this at the team level which will force the students to learn what the team-mates have implemented.
+Have the students explain their own approach on odd numbered lab sessions and the approach of one other team-mate on the even numbered lab sessions. For the later, give 30 min of time to the team just to converse and prepare. The peer explanations can further be graded at the team level, forcing collaboration.
 
 Benefits include:
 
-- Easier distribution of workload resolving the under-employed worker problem
+- Easier distribution of workload resolving the under-employed worker problem via structuring of role assignment
 - Exposure to a wider range of concepts and design trade-offs resolving the Lack of Breadth problem
-- Opportunities for rich articulation and communication among team members, allowing for reflection and exploration.
+- Opportunities for conflict, grounding and negotiation among team members.
 
 Since this feature already solves a lot of the issues that the programming assignments were meant to solve, we can remove programming assignments, thereby avoiding the "meaningless assignments" problem entirely.
 
-### “See Also” Literature to Address Breadth Without Overload
+### Extra Literature for Breadth
 
-- Introduce "see also" sections pointing to external literature covering these omitted methods
+- Introduce "see also" sections covering ommited concepts.
 - Keep these optional to preserve instrumentality. Students will be motivated to read these either as they face implementation choices requiring each method's understanding or due to curiosity, and will undergo exploration.
-- The final exam should only include concepts covered by approaches implemented by teams
+- The final exam should only include concepts covered by approaches implemented by teams.
 - Additionally, students can be asked to justify their chosen methods in a brief assignment (around 3% weightage), encouraging lightweight engagement with broader literature despite some initial resistance
 
 \newpage 
